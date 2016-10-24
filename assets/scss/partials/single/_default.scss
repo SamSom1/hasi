@@ -1,0 +1,13 @@
+.project {
+	@extend .grid;
+	padding: 5rem 0;
+	&__title {
+		font-size: 3rem;
+	}
+	&__content {
+		p {
+			font-size: 1rem;
+			line-height: 1.5rem;
+		}
+	}
+}
