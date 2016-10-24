@@ -206,10 +206,15 @@ body {
 .project {
   padding: 5rem 0; }
   .project__title {
-    font-size: 3rem; }
-  .project__content p {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    text-align: center; }
+  .project__main {
     font-size: 1rem;
-    line-height: 1.5rem; }
+    line-height: 1.75rem; }
+    .project__main p {
+      font-size: 1rem;
+      line-height: 1.75rem; }
 
 /* aside */
 .aside-navigator {

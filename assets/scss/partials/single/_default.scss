@@ -2,12 +2,16 @@
 	@extend .grid;
 	padding: 5rem 0;
 	&__title {
-		font-size: 3rem;
+		margin-bottom: 2rem;
+		font-size: 4rem;
+		text-align: center;
 	}
-	&__content {
+	&__main {
+		font-size: 1rem;
+		line-height: 1.75rem;
 		p {
 			font-size: 1rem;
-			line-height: 1.5rem;
+			line-height: 1.75rem;
 		}
 	}
 }
