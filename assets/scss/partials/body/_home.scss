@@ -3,6 +3,7 @@
 	max-width: 860px;
 	margin: 0 auto;
 	&__title {
+		font-family: 'font1', Fallback, sans-serif;
 		font-size: 2rem;
 		padding: 2rem 0;
 	}
@@ -17,8 +18,11 @@
 		}
 	}
 	&__links-tag {
+		border-radius: 1em;
+
 		display: inline-block;
-		background: blue;
+		font-family: 'font1', Fallback, sans-serif;
+		background: grey;
 		padding: 0 1rem;
 		font-size: 0.85rem;
 		line-height: 2rem;
@@ -40,10 +44,16 @@
 		float: left;
 	}
 	&__wrap-box {
+		border-radius: 1em;
 		width: 80%;
 		padding: 5rem 0;
 		text-align: center;
 		background: #f0f0f0;
 	}
-	
+
+	@font-face {
+    font-family: font1;
+    src: url(fonts/fontawesome-webfont.woff);
+}
+
 }

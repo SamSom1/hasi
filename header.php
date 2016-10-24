@@ -9,9 +9,9 @@
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />         
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<!-- responsive -->
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">         
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<!-- mascosuitas -->
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php if (is_single()) : while ( have_posts() ) : the_post(); ?>
@@ -20,17 +20,17 @@
 	<?php //comments_popup_script(); // off by default ?>
 	<?php wp_head(); ?>
 	<?php if (is_home()): ?>
-	<?php endif; ?>                      
+	<?php endif; ?>
 </head>
-<body 
-<?php cc_body_tags() ?>> 
+<body
+<?php cc_body_tags() ?>>
 <header>
-	<section>
+	<section class="home_button">
 		<a href="<?php bloginfo('url'); ?>">
 			Go to home
 		</a>
 	</section>
-	<section>
+	<section class="search_field">
 		<form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo('url'); ?>">
 			<input placeholder="Buscar" type="text" value="" name="s" id="s">
 		</form>
@@ -39,7 +39,7 @@
 		<nav>
 
 			<ul>
-				<?php wp_list_pages('depth=1&title_li'); ?> 
+				<?php wp_list_pages('depth=1&title_li'); ?>
 			</ul>
 		</nav>
 	</section>

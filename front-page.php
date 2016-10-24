@@ -24,28 +24,17 @@
 			</ul>
 		</nav>
 		<section class="home__list">
-			<article class="home__content home__content--mgn">
-				<div class="home__wrap-box">
-					<div class="home__subtitle">
-						Magna
-					</div>
-				</div>
+		<?php $the_query = new WP_Query('showposts=3'); while ($the_query->have_posts()) : $the_query->the_post();?>
+			<article class="home__content">
+							<h2 class="home__wrap-box">
+									<a class="home__enlaces" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+											<?php the_title(); ?>
+									</a>
+							</h2>
 			</article>
-			<article class="home__content home__content--mgn">
-				<div class="home__wrap-box">
-					<div class="home__subtitle">
-						Magna
-					</div>
-				</div>
-			</article>
-			<article class="home__content home__content--mgn">
-				<div class="home__wrap-box">
-					<div class="home__subtitle">
-						Magna
-					</div>
-				</div>
-			</article>
+		<?php endwhile; ?>
 		</section>
 	</div>
+
 
 <?php get_footer(); ?>
