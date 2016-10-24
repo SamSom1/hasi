@@ -8,15 +8,21 @@
 	}
 	&__tags {
 		padding-bottom: 2rem;
+		overflow: hidden;
 		text-align: center;
 		li {
-			margin: 0 0.5rem;
+			margin-right: 1rem;
+			margin-bottom: 1rem;
 			display: inline-block;
 		}
 	}
 	&__links-tag {
+		display: inline-block;
 		background: blue;
-		padding: 0.25rem 2rem;
+		padding: 0 1rem;
+		font-size: 0.85rem;
+		line-height: 2rem;
+		height: 2rem;
 		color: white;
 		text-decoration: none;
 		font-weight: bold;
@@ -30,6 +36,7 @@
 	}
 	&__content {
 		width: 33.3%;
+		margin-bottom: 1rem;
 		float: left;
 	}
 	&__wrap-box {
