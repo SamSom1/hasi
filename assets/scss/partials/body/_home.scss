@@ -1,0 +1,39 @@
+.home {
+	width: 95%;
+	max-width: 860px;
+	margin: 0 auto;
+	&__title {
+		font-size: 2rem;
+		padding: 2rem 0;
+	}
+	&__tags {
+		padding-bottom: 2rem;
+		text-align: center;
+		li {
+			margin: 0 0.5rem;
+			display: inline-block;
+		}
+	}
+	&__links-tag {
+		background: blue;
+		padding: 0.25rem 2rem;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	&__list {
+		padding: 2rem 0;
+		overflow: hidden;
+	}
+	&__content {
+		width: 33.3%;
+		float: left;
+	}
+	&__wrap-box {
+		width: 80%;
+		padding: 5rem 0;
+		text-align: center;
+		background: #f0f0f0;
+	}
+	
+}

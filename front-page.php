@@ -7,17 +7,17 @@
 		<nav class="home__nav">
 			<ul class="home__tags">
 				<li>
-					<a href="#">
+					<a href="#" class="home__links-tag">
 					Applications
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#" class="home__links-tag">
 					Arte
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#" class="home__links-tag">
 						Software
 					</a>
 				</li>
@@ -25,18 +25,24 @@
 		</nav>
 		<section class="home__list">
 			<article class="home__content home__content--mgn">
-				<div class="home__subtitle">
-					Magna
+				<div class="home__wrap-box">
+					<div class="home__subtitle">
+						Magna
+					</div>
 				</div>
 			</article>
-			<article class="home__content home__content--lrm">
-				<div class="home__subtitle">
-					Lorem
+			<article class="home__content home__content--mgn">
+				<div class="home__wrap-box">
+					<div class="home__subtitle">
+						Magna
+					</div>
 				</div>
 			</article>
-			<article class="home__content home__content--fgt">
-				<div class="home__subtitle">
-					Feugiat
+			<article class="home__content home__content--mgn">
+				<div class="home__wrap-box">
+					<div class="home__subtitle">
+						Magna
+					</div>
 				</div>
 			</article>
 		</section>
