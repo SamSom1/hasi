@@ -1,29 +1,11 @@
 /* general */
 
 @import "partials/body/reset";
-@import "partials/body/variables";
-@import "partials/body/general";
+@import "partials/body/home";
 
-/* blog homepage */
+/* rwd */
 
-@import "partials/home/general";
+@import "partials/rwd/tablet";
+@import "partials/rwd/mobile";
 
-/* page */
 
-@import "partials/page/general";
-
-/* single */
-
-@import "partials/single/general";
-
-/* home */
-
-@import "partials/home/general.scss";
-
-/* layout: header, footer... */
-
-@import "partials/layout/general.scss";
-@import "partials/layout/header.scss";
-@import "partials/layout/footer.scss";
-
-/* RWD */
