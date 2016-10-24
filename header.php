@@ -25,17 +25,17 @@
 <body
 <?php cc_body_tags() ?>>
 <header>
-	<section class="home_button">
+	<section class="head__homebutton">
 		<a href="<?php bloginfo('url'); ?>">
 			Go to home
 		</a>
 	</section>
-	<section class="search_field">
+	<section class="head_searchfield">
 		<form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo('url'); ?>">
 			<input placeholder="Buscar" type="text" value="" name="s" id="s">
 		</form>
 	</section>
-	<section>
+	<section class="head">
 		<nav>
 
 			<ul>

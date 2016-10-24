@@ -5,6 +5,9 @@ body {
 ul, ol {
   list-style-type: none; }
 
+@font-face {
+  font-family: font1;
+  src: url(fonts/fontawesome-webfont.woff); }
 .home {
   width: 95%;
   max-width: 860px;
@@ -48,10 +51,7 @@ ul, ol {
     padding: 5rem 0;
     text-align: center;
     background: #f0f0f0; }
-@font-face {
-  .home {
-    font-family: font1;
-    src: url(fonts/fontawesome-webfont.woff); } }
+
 /* RWD */
 @media only screen and (max-width: 540px) {
   .home__content {
@@ -65,5 +65,19 @@ ul, ol {
   .home__content {
     width: 50%; } }
 /* single */
+.head {
+  width: 95%;
+  position: absolute;
+  display: inline-block;
+  max-width: 860px;
+  margin: 0 auto;
+  font-family: 'font1', Fallback, sans-serif; }
+  .head__homebutton {
+    font-family: 'font1', Fallback, sans-serif;
+    font-size: 2rem;
+    padding: 2rem 0; }
+  .head_searchfield {
+    right: 0;
+    position: absolute; }
 
 /*# sourceMappingURL=oneringtorulethemall.css.map */
