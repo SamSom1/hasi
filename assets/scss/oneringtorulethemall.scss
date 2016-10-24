@@ -4,9 +4,11 @@
 @import "partials/body/home";
 
 /* RWD */
+
 @import "partials/rwd/mobile";
 @import "partials/rwd/tablet";
 
-/* single */
+/* layout */
 
-@import "partials/header/header";
+@import "partials/layout/header";
+@import "partials/layout/footer";
