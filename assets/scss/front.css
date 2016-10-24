@@ -163,7 +163,7 @@ button {
   font-weight: 400; }
 
 /* structure */
-.grid, .header__box, .header__nav {
+.grid, .header__box, .header__nav, .project {
   width: 95%;
   margin: 0 auto;
   max-width: 980px; }
@@ -202,7 +202,21 @@ body {
     color: #333;
     background: #f0f0f0; }
 
+/* single */
+.project {
+  padding: 5rem 0; }
+  .project__title {
+    font-size: 3rem; }
+  .project__content p {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+
 /* aside */
+.aside-navigator {
+  background: #f0f0f0;
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+
 /* RWD */
 /* webfonts */
 
