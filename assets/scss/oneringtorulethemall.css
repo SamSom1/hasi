@@ -52,10 +52,7 @@ ul, ol {
   .home {
     font-family: font1;
     src: url(fonts/fontawesome-webfont.woff); } }
-/* rwd */
-@media only screen and (max-width: 860px) {
-  .home__content {
-    width: 50%; } }
+/* RWD */
 @media only screen and (max-width: 540px) {
   .home__content {
     width: 100%;
@@ -64,5 +61,8 @@ ul, ol {
     width: 100%; }
   .home__title {
     font-size: 2rem; } }
+@media only screen and (max-width: 860px) {
+  .home__content {
+    width: 50%; } }
 
 /*# sourceMappingURL=oneringtorulethemall.css.map */

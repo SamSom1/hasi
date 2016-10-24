@@ -3,9 +3,6 @@
 @import "partials/body/reset";
 @import "partials/body/home";
 
-/* rwd */
-
-@import "partials/rwd/tablet";
-@import "partials/rwd/mobile";
-
-
+/* RWD */
+@import "partials/rwd/mobile.scss";
+@import "partials/rwd/tablet.scss";
