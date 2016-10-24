@@ -11,14 +11,31 @@
 		display: none;
 	}
 	&__title {
-		font-size: 3.5rem;
-		letter-spacing: -2px;
+		font-size: 4rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		letter-spacing: -3px;
 	}
 	&__title-link {
 		color: $negro;
 		text-decoration: none;
 	}
-	&__box {
+	&__box, &__nav {
 		@extend .grid;
+	}
+	&__list {
+		li {
+			display: inline-block;
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+			a {
+				font-size: 1rem;
+				display: inline-block;
+				padding: 1rem 2rem;
+				text-decoration: none;
+				color: $negro;
+				background: $gris;
+			}
+		}
 	}
 }
