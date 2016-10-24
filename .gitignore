@@ -1,3 +1,5 @@
 # ignore sass compiled 
 .sass-cache
 *.css.map
+
+assets/scss/front.css
