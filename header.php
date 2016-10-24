@@ -23,25 +23,22 @@
 	<?php endif; ?>
 </head>
 <body
-<?php cc_body_tags() ?>>
-<header>
-	<section class="head__homebutton">
-		<a href="<?php bloginfo('url'); ?>">
-			Go to home
-		</a>
-	</section>
-	<section class="head_searchfield">
-		<form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo('url'); ?>">
-			<input placeholder="Buscar" type="text" value="" name="s" id="s">
-		</form>
-	</section>
-	<section class="head">
-		<nav>
+<?php cc_body_tags() ?>
 
-			<ul>
-				<?php wp_list_pages('depth=1&title_li'); ?>
-			</ul>
-		</nav>
+<header class="header">
+	<section class="header__information">
+		Holi.
 	</section>
-</header>
+	<section class="header__box">
+		<h1 class="header__title">
+			<a href="<?php bloginfo('url'); ?>">
+				The collective idea studio
+			</a>
+		</h1>
+	</section>
+	<nav class="header__nav">
+		<ul class="header__list">
+      	<?php wp_list_categories('title_li'); ?>
+    	</ul>
+	</nav>
 </header>
