@@ -24,6 +24,8 @@ ul, ol {
     color: white;
     text-decoration: none;
     font-weight: bold; }
+    .home__links-tag:hover {
+      background: red; }
   .home__list {
     padding: 2rem 0;
     overflow: hidden; }
