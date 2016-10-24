@@ -158,12 +158,12 @@ button {
   font-family: 'Francois One', sans-serif;
   font-weight: 400; }
 
-.font-2 {
+.font-2, .header__text-logo, .project__title {
   font-family: 'Archivo Black', sans-serif;
   font-weight: 400; }
 
 /* structure */
-.grid, .home__content, .header__box, .header__nav, .project {
+.grid, .home__content, .header__box, .header__nav, .header__logo, .project {
   width: 95%;
   margin: 0 auto;
   max-width: 980px; }
@@ -226,14 +226,16 @@ body {
     text-decoration: none;
     color: #333;
     background: #f0f0f0; }
+.header__text-logo {
+  font-size: 1rem;
+  text-transform: uppercase; }
 
 /* single */
 .project {
-  padding: 5rem 0 15rem 0; }
+  padding: 0 0 15rem 0; }
   .project__title {
     margin-bottom: 2rem;
-    font-size: 4rem;
-    text-align: center; }
+    font-size: 4rem; }
   .project__main {
     font-size: 1rem;
     line-height: 1.75rem; }

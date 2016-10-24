@@ -38,4 +38,12 @@
 			}
 		}
 	}
+	&__logo {
+		@extend .grid
+	}
+	&__text-logo {
+		font-size: 1rem;
+		text-transform: uppercase;
+		@extend .font-2;
+	}
 }
