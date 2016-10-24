@@ -4,5 +4,9 @@
 @import "partials/body/home";
 
 /* RWD */
-@import "partials/rwd/mobile.scss";
-@import "partials/rwd/tablet.scss";
+@import "partials/rwd/mobile";
+@import "partials/rwd/tablet";
+
+/* single */
+
+@import "partials/single/default";
