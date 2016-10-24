@@ -1,5 +1,21 @@
 /* general */
-@import url("https://fonts.googleapis.com/css?family=Rubik:400,900");
+/* colors */
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Francois+One");
+.font-1, body {
+  font-family: 'Francois One', sans-serif;
+  font-weight: 400; }
+
+.font-2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400; }
+
+/* structure */
+.grid, .header__box {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 860px; }
+
 body {
   font-size: 62.5%; }
 
@@ -7,10 +23,25 @@ ul, ol {
   list-style-type: none; }
 
 body {
-  font-size: 62.7%;
-  font-family: Rubik, Helvetica, Arial, sans-serif; }
+  font-size: 62.7%; }
 
 /* layout */
+.header__information {
+  width: 100%;
+  position: relative;
+  background: black;
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+  color: white;
+  font-size: 2rem;
+  color: #777; }
+.header__title {
+  font-size: 3.5rem;
+  letter-spacing: -2px; }
+.header__title-link {
+  color: #333;
+  text-decoration: none; }
+
 /* aside */
 /* RWD */
 /* webfonts */

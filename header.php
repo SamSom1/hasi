@@ -23,7 +23,7 @@
 	<?php endif; ?>
 </head>
 <body
-<?php cc_body_tags() ?>
+<?php cc_body_tags() ?>>
 
 <header class="header">
 	<section class="header__information">
@@ -31,7 +31,7 @@
 	</section>
 	<section class="header__box">
 		<h1 class="header__title">
-			<a href="<?php bloginfo('url'); ?>">
+			<a href="<?php bloginfo('url'); ?>" class="header__title-link">
 				The collective idea studio
 			</a>
 		</h1>
