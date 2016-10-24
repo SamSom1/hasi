@@ -29,5 +29,11 @@
 	<section class="header__information">
 		Holi.
 	</section>
-	<?php get_template_part('partial/navigator'); ?>
+	<section class="header__logo">
+		<div class="header__text-logo">
+			<span>
+				WatchOutfreedom
+			</span>
+		</div>
+	</section>
 </header>

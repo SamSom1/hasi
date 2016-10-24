@@ -1,0 +1,23 @@
+.home {
+	&__content {
+		overflow: hidden;
+		@extend .grid;
+	}
+	&__box {
+		width: 30%;
+		margin-right: 0;
+		float: left;
+		&:nth-child {
+
+		}
+	}
+	&__content {
+		width: 80%;
+		margin: 0 auto;
+		background: $gris;
+	}
+	&__title {
+		text-align: center;
+		padding: 4rem 0;
+	}
+}

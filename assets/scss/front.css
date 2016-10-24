@@ -163,13 +163,38 @@ button {
   font-weight: 400; }
 
 /* structure */
-.grid, .header__box, .header__nav, .project {
+.grid, .home__content, .header__box, .header__nav, .project {
   width: 95%;
   margin: 0 auto;
   max-width: 980px; }
 
+/* grad generated */
+.grad-gris, .aside-navigator {
+  background: #ededed;
+  background: -moz-linear-gradient(top, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ededed), color-stop(0%, #ededed), color-stop(47%, #f6f6f6), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  background: -o-linear-gradient(top, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  background: -ms-linear-gradient(top, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  background: linear-gradient(to bottom, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 ); }
+
 body {
   font-size: 62.7%; }
+
+.home__content {
+  overflow: hidden; }
+.home__box {
+  width: 30%;
+  margin-right: 0;
+  float: left; }
+.home__content {
+  width: 80%;
+  margin: 0 auto;
+  background: #f0f0f0; }
+.home__title {
+  text-align: center;
+  padding: 4rem 0; }
 
 /* layout */
 .header__information {
@@ -204,7 +229,7 @@ body {
 
 /* single */
 .project {
-  padding: 5rem 0; }
+  padding: 5rem 0 15rem 0; }
   .project__title {
     margin-bottom: 2rem;
     font-size: 4rem;
@@ -218,8 +243,7 @@ body {
 
 /* aside */
 .aside-navigator {
-  background: #f0f0f0;
-  padding-top: 10rem;
+  padding-top: 20rem;
   padding-bottom: 10rem; }
 
 /* RWD */
