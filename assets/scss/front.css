@@ -34,7 +34,8 @@ body {
   margin-bottom: 5rem;
   color: white;
   font-size: 2rem;
-  color: #777; }
+  color: #777;
+  display: none; }
 .header__title {
   font-size: 3.5rem;
   letter-spacing: -2px; }
