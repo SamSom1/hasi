@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,aAAa;ACAb,IAAK;EACJ,SAAS,EAAE,KAAK;;AAGjB,MAAO;EACN,eAAe,EAAE,IAAI;;ADAtB,SAAS;AELT,yCAA0C;EAExC,cAAW;IACV,KAAK,EAAE,IAAI;IACX,KAAK,EAAE,IAAI;EAEZ,eAAY;IACX,KAAK,EAAE,IAAI;EAEZ,YAAS;IACT,SAAS,EAAE,IAAI;AFAjB,YAAY",
-"sources": ["oneringtorulethemall.scss","partials/body/_reset.scss","partials/rwd/_mobile.scss"],
-"names": [],
-"file": "oneringtorulethemall.css"
-}

@@ -1,0 +1,20 @@
+/* general */
+
+@import "partials/body/variables";
+@import "partials/body/reset";
+@import "partials/body/home";
+
+/* layout */
+
+@import "partials/layout/header";
+@import "partials/layout/footer";
+
+/* aside */
+
+@import "partials/aside/information";
+@import "partials/aside/final-page";
+
+/* RWD */
+
+@import "partials/rwd/mobile";
+@import "partials/rwd/tablet";
