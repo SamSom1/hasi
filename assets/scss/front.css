@@ -163,7 +163,7 @@ button {
   font-weight: 400; }
 
 /* structure */
-.grid, .home__content, .header__box, .header__nav, .header__logo, .project {
+.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .project {
   width: 95%;
   margin: 0 auto;
   max-width: 980px; }
@@ -233,6 +233,10 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center; }
+
+.category__title {
+  padding-bottom: 2rem;
+  font-size: 2rem; }
 
 /* layout */
 .header__information {
