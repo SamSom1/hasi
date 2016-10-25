@@ -5,19 +5,54 @@
 	}
 	&__box {
 		width: 30%;
-		margin-right: 0;
+		margin-bottom: 5%;
 		float: left;
-		&:nth-child {
-
+		&:nth-child(3n+2) {
+			margin-right: 5%;
+			margin-left: 5%;
 		}
 	}
-	&__content {
-		width: 80%;
+	&__list-content {
+		overflow: hidden;
+		width: 95%;
 		margin: 0 auto;
-		background: $gris;
+		max-width: 1400px;
+	}
+	&__content {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+		opacity: 0.5;
+		display: table;
+		height: 250px;
+		border: 2px solid $negro;
+		box-sizing: border-box;
+		@extend .t;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&__link-table {
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		color: transparent;
+		z-index: 10;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 	&__title {
+		display: table-cell;
+		vertical-align: middle;
+		color: black;
+		@extend .font-2;
+		font-size: 2rem;
+		text-transform: uppercase;
 		text-align: center;
-		padding: 4rem 0;
 	}
 }

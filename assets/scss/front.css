@@ -158,7 +158,7 @@ button {
   font-family: 'Francois One', sans-serif;
   font-weight: 400; }
 
-.font-2, .header__text-logo, .project__title {
+.font-2, .home__title, .header__text-logo, .project__title {
   font-family: 'Archivo Black', sans-serif;
   font-weight: 400; }
 
@@ -169,7 +169,7 @@ button {
   max-width: 980px; }
 
 /* transitons */
-.t, .header__logo-link, .header__list li a {
+.t, .home__content, .header__logo-link, .header__list li a {
   -webkit-transition: 0.2s ease-in;
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
@@ -193,15 +193,46 @@ body {
   overflow: hidden; }
 .home__box {
   width: 30%;
-  margin-right: 0;
+  margin-bottom: 5%;
   float: left; }
-.home__content {
-  width: 80%;
+  .home__box:nth-child(3n+2) {
+    margin-right: 5%;
+    margin-left: 5%; }
+.home__list-content {
+  overflow: hidden;
+  width: 95%;
   margin: 0 auto;
-  background: #f0f0f0; }
+  max-width: 1400px; }
+.home__content {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  opacity: 0.5;
+  display: table;
+  height: 250px;
+  border: 2px solid #333;
+  box-sizing: border-box; }
+  .home__content:hover {
+    opacity: 1; }
+.home__link-table {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  color: transparent;
+  z-index: 10; }
+  .home__link-table:hover {
+    cursor: pointer; }
 .home__title {
-  text-align: center;
-  padding: 4rem 0; }
+  display: table-cell;
+  vertical-align: middle;
+  color: black;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center; }
 
 /* layout */
 .header__information {
@@ -248,6 +279,7 @@ body {
 .header__logo {
   padding-bottom: 1rem; }
 .header__text-logo {
+  padding: 2rem 0 1rem 0;
   font-size: 1rem;
   text-transform: uppercase; }
 
