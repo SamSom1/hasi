@@ -163,7 +163,7 @@ button {
   font-weight: 400; }
 
 /* structure */
-.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .project__title, .information__content {
+.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .project__title, .project__cat, .information__content {
   width: 90%;
   margin: 0 auto;
   max-width: 980px; }
@@ -310,6 +310,17 @@ body {
       width: 90%;
       max-width: 600px;
       margin: 2.5rem auto; }
+  .project__cat a {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    display: inline-block;
+    padding: 0.85rem 1.5rem;
+    text-decoration: none;
+    color: #333;
+    background: #f0f0f0; }
 
 /* image full content */
 p.image {
