@@ -163,7 +163,7 @@ button {
   font-weight: 400; }
 
 /* structure */
-.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .foot, .project__title, .project__cat, .information__content {
+.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .foot, .project__title, .project__cat, .information__content, .aside-more-post {
   width: 90%;
   margin: 0 auto;
   max-width: 980px; }
@@ -357,6 +357,19 @@ p.image {
 .aside-navigator {
   padding-top: 20rem;
   padding-bottom: 10rem; }
+
+.aside-more-post {
+  padding: 5rem 0 25rem 0; }
+  .aside-more-post span {
+    width: 50%;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 2rem; }
+    .aside-more-post span a {
+      color: black; }
+      .aside-more-post span a:hover {
+        text-decoration: none; }
 
 /* RWD */
 @media only screen and (max-width: 860px) {
