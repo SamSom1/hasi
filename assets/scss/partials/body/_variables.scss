@@ -24,6 +24,15 @@ $gris: #f0f0f0;
 	max-width: 980px;
 }
 
+/* transitons */
+
+.t {
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
 /* grad generated */
 
 .grad-gris {
