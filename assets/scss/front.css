@@ -158,7 +158,7 @@ button {
   font-family: 'Francois One', sans-serif;
   font-weight: 400; }
 
-.font-2, .home__title, .header__text-logo, .project__title {
+.font-2, .home__title, .header__text-logo, .header__link-info a, .project__title {
   font-family: 'Archivo Black', sans-serif;
   font-weight: 400; }
 
@@ -169,7 +169,7 @@ button {
   max-width: 980px; }
 
 /* transitons */
-.t, .home__content, .header__logo-link, .header__list li a {
+.t, .home__content, .header__logo-link, .header__list li a, .header__link-info a, .nav-oculto-active {
   -webkit-transition: 0.2s ease-in;
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
@@ -239,16 +239,6 @@ body {
   font-size: 2rem; }
 
 /* layout */
-.header__information {
-  width: 100%;
-  position: relative;
-  background: black;
-  padding: 5rem 0;
-  margin-bottom: 5rem;
-  color: white;
-  font-size: 2rem;
-  color: #777;
-  display: none; }
 .header__logo-link {
   color: black;
   text-decoration: none;
@@ -286,6 +276,22 @@ body {
   padding: 2rem 0 1rem 0;
   font-size: 1rem;
   text-transform: uppercase; }
+.header__link-info {
+  position: fixed;
+  top: 5%;
+  right: 5%; }
+  .header__link-info a {
+    display: inline-block;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    font-size: 0.85rem;
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    .header__link-info a:hover {
+      opacity: 1; }
 
 /* single */
 .project {
@@ -316,10 +322,10 @@ p.image {
 
 /* aside */
 .nav-oculto {
-  display: block; }
+  display: none; }
 
 .nav-oculto-active {
-  display: none; }
+  display: block; }
 
 .information {
   width: 100%;

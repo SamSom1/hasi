@@ -1,9 +1,10 @@
 .nav-oculto {
-	display:block;
+	display: none;
 }
 
 .nav-oculto-active {
-	display: none;
+	display: block;
+	@extend .t;
 }
 
 .information {
