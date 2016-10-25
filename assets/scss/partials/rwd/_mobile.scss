@@ -1,2 +1,11 @@
 @media only screen and (max-width: 540px) {
+	.home {
+		&__box {
+			width: 100%;
+			float: none;
+			&:nth-child(odd) {
+				margin-right: 0;
+			}
+		}
+	}
 }
