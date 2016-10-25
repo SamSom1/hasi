@@ -1,0 +1,7 @@
+.category {
+	&__title {
+		@extend .grid;
+		padding-bottom: 2rem;
+		font-size: 2rem;
+	}
+}

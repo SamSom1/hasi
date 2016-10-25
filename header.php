@@ -24,24 +24,25 @@
 </head>
 <body
 <?php cc_body_tags() ?>>
-<header>
-	<section class="head__homebutton">
-		<a href="<?php bloginfo('url'); ?>">
-			Go to home
-		</a>
-	</section>
-	<section class="head_searchfield">
-		<form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo('url'); ?>">
-			<input placeholder="Buscar" type="text" value="" name="s" id="s">
-		</form>
-	</section>
-	<section class="head">
-		<nav>
+<!-- pruebas js -->
 
-			<ul>
-				<?php wp_list_pages('depth=1&title_li'); ?>
-			</ul>
-		</nav>
+<header class="header">
+	<?php get_template_part('partial/information'); ?>
+	<section class="header__information">
+		Holi.
 	</section>
-</header>
+	<section class="header__link-info">
+		<a href="#" onclick="$('.nav-oculto').toggleClass('nav-oculto-active');$('.btn-mobile').toggleClass('btn-mobile-active');" class="btn-mobile">
+             information
+        </a>
+	</section>
+	<section class="header__logo">
+		<div class="header__text-logo">
+			<span>
+				<a href="<?php bloginfo('url'); ?>" class="header__logo-link">
+					WatchOutfreedom
+				</a>
+			</span>
+		</div>
+	</section>
 </header>

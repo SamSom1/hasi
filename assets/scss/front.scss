@@ -1,0 +1,30 @@
+/* general */
+
+@import "partials/body/reset";
+@import "partials/body/variables";
+@import "partials/body/general";
+@import "partials/body/home";
+@import "partials/body/category";
+
+/* layout */
+
+@import "partials/layout/header";
+@import "partials/layout/footer";
+
+/* single */
+
+@import "partials/single/default";
+
+/* aside */
+
+@import "partials/aside/information";
+@import "partials/aside/final-page";
+
+/* RWD */
+
+@import "partials/rwd/mobile";
+@import "partials/rwd/tablet";
+
+/* webfonts */
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Francois+One');

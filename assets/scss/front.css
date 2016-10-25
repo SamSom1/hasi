@@ -1,0 +1,332 @@
+/* general */
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Francois+One");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none;
+  list-style-type: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*:focus {
+  outline: 0px; }
+
+/* reset form */
+select {
+  -webkit-appearance: none; }
+
+/* ----------------------------------------------------------------------------------------------------
+Super Form Reset
+A couple of things to watch out for:
+- IE8: If a text input doesn't have padding on all sides or none the text won't be centered.
+- The default border sizes on text inputs in all UAs seem to be slightly different. You're better off using custom borders.
+- You NEED to set the font-size and family on all form elements
+- Search inputs need to have their appearance reset and the box-sizing set to content-box to match other UAs
+- You can style the upload button in webkit using ::-webkit-file-upload-button
+- ::-webkit-file-upload-button selectors can't be used in the same selector as normal ones. FF and IE freak out.
+- IE: You don't need to fake inline-block with labels and form controls in IE. They function as inline-block.
+- By turning off ::-webkit-search-decoration, it removes the extra whitespace on the left on search inputs
+----------------------------------------------------------------------------------------------------*/
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: Arial; }
+
+/* Remove the stupid outer glow in Webkit */
+input:focus {
+  outline: 0; }
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Text Inputs
+-----------------------------------------------*/
+/* Button Controls
+-----------------------------------------------*/
+input[type=checkbox],
+input[type=radio] {
+  width: 13px;
+  height: 13px; }
+
+/* File Uploads
+-----------------------------------------------*/
+/* Search Input
+-----------------------------------------------*/
+/* Make webkit render the search input like a normal text field */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box; }
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none; }
+
+/* Buttons
+-----------------------------------------------*/
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto; }
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none; }
+
+/* Textarea
+-----------------------------------------------*/
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto; }
+
+/* Selects
+-----------------------------------------------*/
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top; }
+
+/* avoid iPad/iPhone buttons style */
+input[type="submit"],
+button {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; }
+
+/* colors */
+/* fonts */
+.font-1, body {
+  font-family: 'Francois One', sans-serif;
+  font-weight: 400; }
+
+.font-2, .home__title, .header__text-logo, .project__title {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400; }
+
+/* structure */
+.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .project, .information__content {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 980px; }
+
+/* transitons */
+.t, .home__content, .header__logo-link, .header__list li a {
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+
+/* grad generated */
+.grad-gris, .aside-navigator {
+  background: #ededed;
+  background: -moz-linear-gradient(top, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ededed), color-stop(0%, #ededed), color-stop(47%, #f6f6f6), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  background: -o-linear-gradient(top, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  background: -ms-linear-gradient(top, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  background: linear-gradient(to bottom, #ededed 0%, #ededed 0%, #f6f6f6 47%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 ); }
+
+body {
+  font-size: 62.7%; }
+
+.home__content {
+  overflow: hidden; }
+.home__box {
+  width: 30%;
+  margin-bottom: 5%;
+  float: left; }
+  .home__box:nth-child(3n+2) {
+    margin-right: 5%;
+    margin-left: 5%; }
+.home__list-content {
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1400px; }
+.home__content {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  opacity: 0.5;
+  display: table;
+  height: 250px;
+  border: 2px solid #333;
+  box-sizing: border-box; }
+  .home__content:hover {
+    opacity: 1; }
+.home__link-table {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  color: transparent;
+  z-index: 10; }
+  .home__link-table:hover {
+    cursor: pointer; }
+.home__title {
+  display: table-cell;
+  vertical-align: middle;
+  color: black;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.category__title {
+  padding-bottom: 2rem;
+  font-size: 2rem; }
+
+/* layout */
+.header__information {
+  width: 100%;
+  position: relative;
+  background: black;
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+  color: white;
+  font-size: 2rem;
+  color: #777;
+  display: none; }
+.header__logo-link {
+  color: black;
+  text-decoration: none;
+  opacity: 0.5; }
+  .header__logo-link:hover {
+    opacity: 1; }
+.header__title {
+  font-size: 4rem;
+  padding-bottom: 3rem;
+  letter-spacing: -3px; }
+.header__title-link {
+  color: #333;
+  text-decoration: none; }
+.header__list {
+  padding-bottom: 3rem; }
+  .header__list li {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem; }
+    .header__list li a {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+      display: inline-block;
+      padding: 0.85rem 1.5rem;
+      text-decoration: none;
+      color: #333;
+      background: #f0f0f0; }
+      .header__list li a:hover {
+        background: #333;
+        color: white; }
+.header__logo {
+  padding-bottom: 1rem; }
+.header__text-logo {
+  padding: 2rem 0 1rem 0;
+  font-size: 1rem;
+  text-transform: uppercase; }
+
+/* single */
+.project {
+  padding: 0 0 15rem 0; }
+  .project__title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -2px; }
+  .project__main {
+    font-size: 1rem;
+    line-height: 1.75rem; }
+    .project__main p {
+      font-size: 1rem;
+      line-height: 1.75rem; }
+
+/* aside */
+.nav-oculto {
+  display: block; }
+
+.nav-oculto-active {
+  display: none; }
+
+.information {
+  width: 100%;
+  padding: 5rem 0;
+  background: #f0f0f0; }
+  .information__content {
+    overflow: hidden; }
+  .information__box {
+    width: 60%;
+    float: left; }
+  .information__login {
+    width: 35%;
+    float: right; }
+
+.aside-navigator {
+  padding-top: 20rem;
+  padding-bottom: 10rem; }
+
+/* RWD */
+/* webfonts */
+
+/*# sourceMappingURL=front.css.map */
