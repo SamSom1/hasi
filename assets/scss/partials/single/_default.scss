@@ -19,6 +19,21 @@
 			margin: 2.5rem auto
 		}
 	}
+	&__cat {
+		@extend .grid;
+		a {
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 0.85rem;
+			display: inline-block;
+			padding: 0.85rem 1.5rem;
+			text-decoration: none;
+			color: #333;
+			background: #f0f0f0;
+		}
+	}
 }
 
 /* image full content */

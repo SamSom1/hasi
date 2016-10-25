@@ -163,13 +163,13 @@ button {
   font-weight: 400; }
 
 /* structure */
-.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .project__title, .information__content {
+.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .foot, .project__title, .project__cat, .information__content, .aside-more-post {
   width: 90%;
   margin: 0 auto;
   max-width: 980px; }
 
 /* transitons */
-.t, .home__content, .header__logo-link, .header__list li a, .header__link-info a, .nav-oculto-active {
+.t, .home__box, .home__content, .header__logo-link, .header__list li a, .header__link-info a, .nav-oculto-active {
   -webkit-transition: 0.2s ease-in;
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
@@ -200,12 +200,11 @@ body {
     margin-left: 5%; }
 .home__list-content {
   overflow: hidden;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1400px; }
 .home__content {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   position: relative;
   opacity: 0.5;
   display: table;
@@ -293,6 +292,10 @@ body {
     .header__link-info a:hover {
       opacity: 1; }
 
+.foot {
+  font-size: 1rem;
+  padding: 5rem 0; }
+
 /* single */
 .project {
   padding: 0 0 15rem 0; }
@@ -310,6 +313,17 @@ body {
       width: 90%;
       max-width: 600px;
       margin: 2.5rem auto; }
+  .project__cat a {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    display: inline-block;
+    padding: 0.85rem 1.5rem;
+    text-decoration: none;
+    color: #333;
+    background: #f0f0f0; }
 
 /* image full content */
 p.image {
@@ -344,7 +358,34 @@ p.image {
   padding-top: 20rem;
   padding-bottom: 10rem; }
 
+.aside-more-post {
+  padding: 5rem 0 25rem 0; }
+  .aside-more-post span {
+    width: 50%;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 2rem; }
+    .aside-more-post span a {
+      color: black; }
+      .aside-more-post span a:hover {
+        text-decoration: none; }
+
 /* RWD */
+@media only screen and (max-width: 860px) {
+  .home__box {
+    width: 45%; }
+    .home__box:nth-child(3n+2) {
+      margin-right: 0;
+      margin-left: 0; }
+    .home__box:nth-child(odd) {
+      margin-right: 10%; } }
+@media only screen and (max-width: 540px) {
+  .home__box {
+    width: 100%;
+    float: none; }
+    .home__box:nth-child(odd) {
+      margin-right: 0; } }
 /* webfonts */
 
 /*# sourceMappingURL=front.css.map */
