@@ -32,7 +32,9 @@
 	<section class="header__logo">
 		<div class="header__text-logo">
 			<span>
-				WatchOutfreedom
+				<a href="<?php bloginfo('url'); ?>" class="header__logo-link">
+					WatchOutfreedom
+				</a>
 			</span>
 		</div>
 	</section>
