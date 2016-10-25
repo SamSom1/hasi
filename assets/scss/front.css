@@ -239,16 +239,6 @@ body {
   font-size: 2rem; }
 
 /* layout */
-.header__information {
-  width: 100%;
-  position: relative;
-  background: black;
-  padding: 5rem 0;
-  margin-bottom: 5rem;
-  color: white;
-  font-size: 2rem;
-  color: #777;
-  display: none; }
 .header__logo-link {
   color: black;
   text-decoration: none;
