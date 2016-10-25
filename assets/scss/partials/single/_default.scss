@@ -3,7 +3,9 @@
 	padding: 0 0 15rem 0;
 	&__title {
 		margin-bottom: 2rem;
-		font-size: 4rem;
+		font-size: 3rem;
+		text-transform: uppercase;
+		letter-spacing: -2px;
 		@extend .font-2;
 	}
 	&__main {
