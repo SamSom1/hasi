@@ -1,5 +1,5 @@
-<footer>
-	Foot. 
+<footer class="foot">
+	Mensaje footer.
 </footer>
 
 <!-- js scripts -->

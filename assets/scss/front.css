@@ -163,7 +163,7 @@ button {
   font-weight: 400; }
 
 /* structure */
-.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .project__title, .project__cat, .information__content {
+.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .foot, .project__title, .project__cat, .information__content {
   width: 90%;
   margin: 0 auto;
   max-width: 980px; }
@@ -291,6 +291,10 @@ body {
     letter-spacing: 2px; }
     .header__link-info a:hover {
       opacity: 1; }
+
+.foot {
+  font-size: 1rem;
+  padding: 5rem 0; }
 
 /* single */
 .project {
