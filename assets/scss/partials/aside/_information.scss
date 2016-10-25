@@ -1,0 +1,25 @@
+.nav-oculto {
+	display:block;
+}
+
+.nav-oculto-active {
+	display: none;
+}
+
+.information {
+	width: 100%;
+	padding: 5rem 0;
+	background: #f0f0f0;
+	&__content {
+		@extend .grid;
+		overflow: hidden;
+	}
+	&__box {
+		width: 60%;
+		float: left;
+	}
+	&__login {
+		width: 35%;
+		float: right;
+	}
+}

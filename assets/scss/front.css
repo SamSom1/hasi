@@ -163,7 +163,7 @@ button {
   font-weight: 400; }
 
 /* structure */
-.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .project {
+.grid, .home__content, .category__title, .header__box, .header__nav, .header__logo, .project, .information__content {
   width: 95%;
   margin: 0 auto;
   max-width: 980px; }
@@ -303,6 +303,25 @@ body {
       line-height: 1.75rem; }
 
 /* aside */
+.nav-oculto {
+  display: block; }
+
+.nav-oculto-active {
+  display: none; }
+
+.information {
+  width: 100%;
+  padding: 5rem 0;
+  background: #f0f0f0; }
+  .information__content {
+    overflow: hidden; }
+  .information__box {
+    width: 60%;
+    float: left; }
+  .information__login {
+    width: 35%;
+    float: right; }
+
 .aside-navigator {
   padding-top: 20rem;
   padding-bottom: 10rem; }
