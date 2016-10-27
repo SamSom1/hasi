@@ -3,16 +3,22 @@
 }
 
 .nav-oculto-active {
-	display: block;
 	@extend .t;
+	display: block;
 }
 
 .information {
 	width: 100%;
-	padding: 5rem 0;
+	padding: 5rem 0rem 5rem 0 ;
+	font-size: 1.2rem;
 	background: #f0f0f0;
+	display: block;
+	p{
+		line-height: 1.5rem;
+	}
 	&__content {
 		@extend .grid;
+		display: table;
 		overflow: hidden;
 	}
 	&__box {
@@ -22,5 +28,13 @@
 	&__login {
 		width: 35%;
 		float: right;
+	}
+
+	a{
+		@extend .a;
+		float: right;
+		margin-top: 1rem;
+		margin-left: 1rem;
+
 	}
 }

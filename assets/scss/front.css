@@ -170,7 +170,7 @@ button {
   margin: 1rem auto;
   max-width: 980px; }
 
-.a, .header__list li a, .project__list li a, .project__cat a {
+.a, .header__list li a, .project__list li a, .project__cat a, .information a {
   border-radius: 10rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -180,7 +180,7 @@ button {
   text-decoration: none;
   color: #ffffff;
   background: #ABABAB; }
-  .a:hover, .header__list li a:hover, .project__list li a:hover, .project__cat a:hover {
+  .a:hover, .header__list li a:hover, .project__list li a:hover, .project__cat a:hover, .information a:hover {
     background: #333;
     color: white; }
 
@@ -330,10 +330,10 @@ body {
   .header__link-info a, .project__link-info a {
     display: inline-block;
     border-radius: 3rem;
-    border: 2px solid #ccc;
+    border: 2px solid #ABABAB;
     font-size: 0.85rem;
     padding: 0.8rem;
-    color: #ccc;
+    color: #ABABAB;
     text-decoration: none;
     opacity: 0.5;
     font-weight: bolder;
@@ -341,7 +341,7 @@ body {
     letter-spacing: 2px; }
     .header__link-info a:hover, .project__link-info a:hover {
       opacity: 1;
-      background-color: #ccc;
+      background-color: #ABABAB;
       color: white; }
 
 .foot {
@@ -393,9 +393,14 @@ p.image {
 
 .information {
   width: 100%;
-  padding: 5rem 0;
-  background: #f0f0f0; }
+  padding: 5rem 0rem 5rem 0;
+  font-size: 1.2rem;
+  background: #f0f0f0;
+  display: block; }
+  .information p {
+    line-height: 1.5rem; }
   .information__content {
+    display: table;
     overflow: hidden; }
   .information__box {
     width: 60%;
@@ -403,6 +408,10 @@ p.image {
   .information__login {
     width: 35%;
     float: right; }
+  .information a {
+    float: right;
+    margin-top: 1rem;
+    margin-left: 1rem; }
 
 .aside-navigator {
   padding-top: 15vw;

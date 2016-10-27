@@ -75,11 +75,11 @@
 			display: inline-block;
 
 			border-radius: 3rem;
-			border: 2px solid #ccc;
+			border: 2px solid $grisOsc;
 			font-size: 0.85rem;
 
 			padding: 0.8rem;
-			color: #ccc;
+			color: $grisOsc;
 			text-decoration: none;
 			opacity: 0.5;
 			font-weight: bolder;
@@ -89,7 +89,7 @@
 			@extend .t;
 			&:hover {
 				opacity: 1;
-				background-color: #ccc;
+				background-color: $grisOsc;
 				color: white;
 			}
 		}

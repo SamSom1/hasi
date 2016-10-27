@@ -32,7 +32,7 @@
 	<section class="header__logo">
 		<section class="header__link-info">
 			<a href="#" onclick="$('.nav-oculto').toggleClass('nav-oculto-active');$('.btn-mobile').toggleClass('btn-mobile-active');" class="btn-mobile">
-							 i
+							 info
 					</a>
 		</section>
 		<div class="header__text-logo">
