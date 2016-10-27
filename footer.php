@@ -1,6 +1,5 @@
 <footer class="foot">
-	Mensaje footer.
-</footer>
+Find us on <a href="mailto:comunidad@watchoutfreedom.com">com</a>, <a href="mailto:comunidad@watchoutfreedom.com">Instagram</a> and <a href="mailto:comunidad@watchoutfreedom.com">Twitter</a> </footer>
 
 <!-- js scripts -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

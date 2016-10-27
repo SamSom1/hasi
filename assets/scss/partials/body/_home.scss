@@ -1,32 +1,36 @@
 .home {
+	position: relative;
 	&__content {
 		overflow: hidden;
 		@extend .grid;
 	}
 	&__box {
-		width: 30%;
-		margin-bottom: 5%;
+		width: 32%;
+		margin-bottom: 0%;
 		float: left;
 		@extend .t;
 		&:nth-child(3n+2) {
-			margin-right: 5%;
-			margin-left: 5%;
+			margin-right: 2%;
+			margin-left: 2%;
+		}
+		&:nth-child(3n-2) {
 		}
 	}
 	&__list-content {
 		overflow: hidden;
 		width: 90%;
 		margin: 0 auto;
-		max-width: 1400px;
+		max-width: 1116px;
 	}
 	&__content {
 		width: 100%;
-		position: relative;
 		opacity: 0.5;
 		display: table;
 		height: 250px;
-		border: 2px solid $negro;
+		background-color: $grisOsc;
+		border-radius: 0.5rem;
 		box-sizing: border-box;
+		overflow: hidden;
 		@extend .t;
 		&:hover {
 			opacity: 1;
@@ -47,6 +51,7 @@
 		}
 	}
 	&__title {
+		overflow: hidden;
 		display: table-cell;
 		vertical-align: middle;
 		color: black;

@@ -3,25 +3,31 @@
 $negro: #333;
 $corporative: red;
 $gris: #f0f0f0;
+$grisOsc: #ABABAB;
+$blanco: #ffffff;
+
 
 /* fonts */
 
 .font-1 {
-	font-family: 'Francois One', sans-serif;
-	font-weight: 400;	
+	font-family: 'fontawesome-webfont', sans-serif;
+	src:url(fonts/fontawesome-webfont.woff);
+	font-weight: 400;
 }
 
 .font-2 {
-	font-family: 'Archivo Black', sans-serif;
-	font-weight: 400;
+	font-family: 'fontawesome-webfont', sans-serif;
+	src:url(fonts/fontawesome-webfont.woff);
+	font-weight: 600;
 }
 
 /* structure */
 
 .grid {
 	width: 90%;
-	margin: 0 auto;
+	margin: 1rem auto;
 	max-width: 980px;
+
 }
 
 /* transitons */
@@ -29,7 +35,7 @@ $gris: #f0f0f0;
 .t {
     -webkit-transition: 0.2s ease-in;
     -moz-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
+  //  -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
 }
 

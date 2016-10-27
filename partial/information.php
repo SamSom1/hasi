@@ -2,7 +2,7 @@
 	<div class="information">
 		<div class="information__content">
 			<div class="information__box">
-				Hola, soy un texto
+				Wof! is a little spot of multidisciplinary creation. From architecture  to games development. From concept art to new tech development. We with proffesionals from
 			</div>
 			<div class="information__login">
 				Soy un login

@@ -11,9 +11,9 @@ var acceptedCookies = function() {
 $(document).ready(function() {
   $("div:has(img)").addClass("image");
   $("p:has(img)").addClass("image");
-  $('#simple-menu').sidr({
-    side: 'right'
-  });
+//  $('#simple-menu').side({
+  //  side: 'right'
+  //});
 
   $('.rrss-share a.fb').on('click', function() {
     var url = $(this).attr('data-href');

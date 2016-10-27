@@ -1,6 +1,6 @@
 <section class="header__box">
 	<h1 class="header__title">
-		The collective idea studio
+		The collective idea studio.
 	</h1>
 </section>
 <nav class="header__nav">

@@ -9,9 +9,10 @@
 		}
 	}
 	&__title {
-		font-size: 4rem;
+		font-size: 4.5vw;
 		padding-bottom: 3rem;
-		letter-spacing: -3px;
+		letter-spacing: -0.1vw;
+		text-align: center;
 	}
 	&__title-link {
 		color: $negro;
@@ -20,21 +21,28 @@
 	&__box, &__nav {
 		@extend .grid;
 	}
+	&__nav {
+		margin-bottom: 8rem;
+	}
 	&__list {
 		padding-bottom: 3rem;
+		width: 90%;
+		margin: auto;;
+
 		li {
 			display: inline-block;
 			margin-right: 1rem;
 			margin-bottom: 1rem;
 			a {
+				border-radius: 10rem;
 				text-transform: uppercase;
 				letter-spacing: 1px;
 				font-size: 0.85rem;
 				display: inline-block;
 				padding: 0.85rem 1.5rem;
 				text-decoration: none;
-				color: $negro;
-				background: $gris;
+				color: $blanco;
+				background: $grisOsc;
 				@extend .t;
 				&:hover {
 					background: $negro;
@@ -43,13 +51,24 @@
 			}
 		}
 	}
+
 	&__logo {
 		@extend .grid;
+		margin-top: 14vw;
 		padding-bottom: 1rem;
+		position: relative;
+		text-align: center;
+
+	}
+	&__icon {
+		@extend .grid;
+		padding-bottom: 1rem;
+		position: relative;
+
 	}
 	&__text-logo {
 		padding: 2rem 0 1rem 0;
-		font-size: 1rem;
+		font-size: 1.2vw;
 		text-transform: uppercase;
 		@extend .font-2;
 	}
