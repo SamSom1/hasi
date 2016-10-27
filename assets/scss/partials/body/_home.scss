@@ -26,9 +26,8 @@
 	&__content {
 		width: 100%;
 		position: relative;
-		opacity: 0.5;
-		display: table;
 		height: 250px;
+		opacity: 0.7;
 		background-color: $grisOsc;
 		border-radius: 0.5rem;
 		box-sizing: border-box;
@@ -38,27 +37,28 @@
 		//background-size: 22.3rem auto;
 		background-size:cover;
 
-
-
-
 		@extend .t;
 		&:hover {
 			opacity: 1;
 		}
+
+
 	}
+.cover{
+	background-size:cover;
+	width: 100%;
+	display: table;
+	height: 250px;
+	border-radius: 0.5rem;
+	background-color: rgba(128,64,0,0.75);
 
-#cover :after {
-
-	background:red;
-	z-index: 2;
-	opacity: 1;
-
+	@extend .t;
+	&:hover {
+		background-color: rgba(128,64,0,1.0);
+	}
 }
-#cover :hover:after {
-	@extend .t2;
-		opacity: 0;
 
-}
+
 
 
 	&__link-table {
@@ -78,12 +78,16 @@
 
 	&__title {
 		overflow: hidden;
+		width: 60%;
+		padding-right:1.5rem;
+		text-align: right;
 		display: table-cell;
 		vertical-align: middle;
-		color: black;
-		@extend .font-2;
-		font-size: 2rem;
+		color: white;
+		opacity: 1;
+		@extend .font-1;
+		font-size: 1.4rem;
+		font-weight: bold;
 		text-transform: uppercase;
-		text-align: center;
 	}
 }

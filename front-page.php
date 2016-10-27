@@ -10,8 +10,11 @@
 			    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
 			?>
 		<article class="home__box">
-			<div class="cover" >
+
 			<div class="home__content" style="background-image: url(<?php echo $src[0]; ?> ) ; ">
+
+				<div class="cover">
+
 				<a class="home__link-table" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					Visitar proyecto
 				</a>
@@ -19,6 +22,8 @@
 						<?php the_title(); ?>
 				</h2>
 			</div>
+
+
 		</div>
 		</article>
 

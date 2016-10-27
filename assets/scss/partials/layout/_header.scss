@@ -73,18 +73,24 @@
 		right: 5%;
 		a {
 			display: inline-block;
-			border-top: 2px solid #ccc;
-			border-bottom: 2px solid #ccc;
+
+			border-radius: 3rem;
+			border: 2px solid #ccc;
 			font-size: 0.85rem;
-			color: black;
+
+			padding: 0.8rem;
+			color: #ccc;
 			text-decoration: none;
 			opacity: 0.5;
+			font-weight: bolder;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-			@extend .font-2;
+			@extend .font-1;
 			@extend .t;
 			&:hover {
 				opacity: 1;
+				background-color: #ccc;
+				color: white;
 			}
 		}
 	}

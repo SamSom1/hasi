@@ -154,12 +154,12 @@ button {
 
 /* colors */
 /* fonts */
-.font-1, body, .project__title {
+.font-1, body, .home__title, .header__link-info a, .project__link-info a, .project__title {
   font-family: 'fontawesome-webfont', sans-serif;
   src: url(fonts/fontawesome-webfont.woff);
   font-weight: 400; }
 
-.font-2, body a, .home__title, .header__text-logo, .project__text-logo, .header__link-info a, .project__link-info a {
+.font-2, body a, .header__text-logo, .project__text-logo {
   font-family: 'fontawesome-webfont', sans-serif;
   src: url(fonts/fontawesome-webfont.woff);
   font-weight: 600; }
@@ -185,15 +185,15 @@ button {
     color: white; }
 
 /* transitons */
-.t, body a, .home__box, .home__content, .header__logo-link, .project__logo-link, .header__list li a, .project__list li a, .header__link-info a, .project__link-info a, .nav-oculto-active {
+.t, body a, .home__box, .home__content, .home .cover, .header__logo-link, .project__logo-link, .header__list li a, .project__list li a, .header__link-info a, .project__link-info a, .nav-oculto-active {
   -webkit-transition: 0.2s ease-in;
   -moz-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
 
-.t2, .home #cover :hover:after {
-  -moz-transition: background .3s linear;
-  -webkit-transition: background .3s linear;
-  transition: background .3s linear; }
+.t2 {
+  -moz-transition: .3s linear;
+  -webkit-transition: .3s linear;
+  transition: .3s linear; }
 
 /* grad generated */
 .grad-gris, .aside-navigator {
@@ -233,9 +233,8 @@ body {
 .home__content {
   width: 100%;
   position: relative;
-  opacity: 0.5;
-  display: table;
   height: 250px;
+  opacity: 0.7;
   background-color: #ABABAB;
   border-radius: 0.5rem;
   box-sizing: border-box;
@@ -244,12 +243,15 @@ body {
   background-size: cover; }
   .home__content:hover {
     opacity: 1; }
-.home #cover :after {
-  background: red;
-  z-index: 2;
-  opacity: 1; }
-.home #cover :hover:after {
-  opacity: 0; }
+.home .cover {
+  background-size: cover;
+  width: 100%;
+  display: table;
+  height: 250px;
+  border-radius: 0.5rem;
+  background-color: rgba(128, 64, 0, 0.75); }
+  .home .cover:hover {
+    background-color: #804000; }
 .home__link-table {
   display: block;
   position: absolute;
@@ -264,12 +266,16 @@ body {
     cursor: pointer; }
 .home__title {
   overflow: hidden;
+  width: 60%;
+  padding-right: 1.5rem;
+  text-align: right;
   display: table-cell;
   vertical-align: middle;
-  color: black;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: center; }
+  color: white;
+  opacity: 1;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .category__title {
   padding-bottom: 2rem;
@@ -323,16 +329,20 @@ body {
   right: 5%; }
   .header__link-info a, .project__link-info a {
     display: inline-block;
-    border-top: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    border-radius: 3rem;
+    border: 2px solid #ccc;
     font-size: 0.85rem;
-    color: black;
+    padding: 0.8rem;
+    color: #ccc;
     text-decoration: none;
     opacity: 0.5;
+    font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 2px; }
     .header__link-info a:hover, .project__link-info a:hover {
-      opacity: 1; }
+      opacity: 1;
+      background-color: #ccc;
+      color: white; }
 
 .foot {
   font-size: 1.5rem;
