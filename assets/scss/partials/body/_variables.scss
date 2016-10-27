@@ -7,6 +7,7 @@ $grisOsc: #ABABAB;
 $blanco: #ffffff;
 
 
+
 /* fonts */
 
 .font-1 {
@@ -30,6 +31,22 @@ $blanco: #ffffff;
 
 }
 
+.a {
+	border-radius: 10rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.85rem;
+	display: inline-block;
+	padding: 0.85rem 1.5rem;
+	text-decoration: none;
+	color: $blanco;
+	background: $grisOsc;
+	&:hover {
+		background: $negro;
+		color: white;
+	}
+}
+
 /* transitons */
 
 .t {
@@ -37,6 +54,15 @@ $blanco: #ffffff;
     -moz-transition: 0.2s ease-in;
   //  -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
+}
+
+.t2 {
+
+	-moz-transition: background .3s linear;
+	-webkit-transition: background .3s linear;
+//	-o-transition: background .3s linear;
+	transition: background .3s linear;
+
 }
 
 /* grad generated */

@@ -37,7 +37,8 @@
 		</section>
 		<div class="header__text-logo">
 			<span>
-				<img src="" class ="header_icon">img</img>
+				<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/10/logo.jpeg"/>
+				</img>
 				<a href="<?php bloginfo('url'); ?>" class="header__logo-link">
 					Watchoutfreedom
 				</a>

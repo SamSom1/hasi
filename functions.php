@@ -39,6 +39,7 @@ if ( function_exists('register_sidebar') )
     ));
 
 // Featured thumbnail
+set_post_thumbnail_size( 200, 200 );
 
 if ( function_exists( 'add_theme_support' ) )
   add_theme_support( 'post-thumbnails');
@@ -46,7 +47,7 @@ if ( function_exists( 'add_theme_support' ) )
 add_image_size('small-home', 700, 250, true);
 add_image_size('single-feature', 700, 250, true);
 add_image_size('big-background', 1700, 937, true);
-
+add_image_size( 'menu', 100, 100 );
 
 // Codecantor functions
 function cc_body_tags() {
