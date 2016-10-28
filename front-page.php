@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('header.php'); ?>
 <?php get_template_part('partial/navigator'); ?>
 
 

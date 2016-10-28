@@ -30,11 +30,14 @@
 	<?php get_template_part('partial/information'); ?>
 
 	<section class="header__logo">
+		<?php if (is_single()) : while ( have_posts() ) : the_post(); ?>
+
 		<section class="header__link-info">
 			<a href="#" onclick="$('.nav-oculto').toggleClass('nav-oculto-active');$('.btn-mobile').toggleClass('btn-mobile-active');" class="btn-mobile">
 							 info
 					</a>
 		</section>
+			<?php endwhile; endif; ?>
 		<div class="header__text-logo">
 			<span>
 				<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/10/logo.jpeg"/>
