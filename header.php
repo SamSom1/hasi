@@ -26,6 +26,12 @@
 <?php cc_body_tags() ?>>
 <!-- pruebas js -->
 
+<!-- example scrolldown ! -->
+
+    <a href="#" class="more" id="know_more_front">
+      Go to
+    </a>
+
 <header class="header">
 	<?php get_template_part('partial/information'); ?>
 

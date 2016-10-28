@@ -59,4 +59,15 @@ $(document).ready(function() {
     });
   }
 
-});
+ $(function(){
+    $('#know_more_front').on('click',function() {
+      $.scrollTo('#front_page',800);
+      return false;
+    }
+);
+
+  }
+);
+}
+)
+
