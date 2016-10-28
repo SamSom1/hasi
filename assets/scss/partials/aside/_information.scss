@@ -13,27 +13,30 @@
 	font-size: 1.2rem;
 	background: #f0f0f0;
 	display: block;
+	text-align: center;
+	margin: 0 auto;
 	p{
 		line-height: 1.5rem;
 	}
 	&__content {
 		@extend .grid;
-		display: table;
+		display:block;
 		overflow: hidden;
+		width: 100%;
+		text-align: center;
 	}
 	&__box {
-		width: 60%;
-		float: left;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
 	}
 	&__login {
 		width: 35%;
-		float: right;
 	}
 
 	a{
 		@extend .a;
-		float: right;
-		margin-top: 1rem;
+		margin-top: 1.4rem;
 		margin-left: 1rem;
 
 	}

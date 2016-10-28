@@ -155,13 +155,13 @@ button {
 /* colors */
 /* fonts */
 .font-1, body, .home__title, .header__link-info a, .project__link-info a, .project__title {
-  font-family: 'fontawesome-webfont', sans-serif;
-  src: url(fonts/fontawesome-webfont.woff);
+  font-family: 'fontawesome-webfont';
+  src: url("/wp/wp-content/themes/hasi/assets/fonts/fontawesome-webfont.woff");
   font-weight: 400; }
 
 .font-2, body a, .header__text-logo, .project__text-logo {
-  font-family: 'fontawesome-webfont', sans-serif;
-  src: url(fonts/fontawesome-webfont.woff);
+  font-family: 'fontawesome-webfont';
+  src: url("/wp/wp-content/themes/hasi/assets/fonts/fontawesome-webfont.woff");
   font-weight: 600; }
 
 /* structure */
@@ -179,10 +179,9 @@ button {
   padding: 0.85rem 1.5rem;
   text-decoration: none;
   color: #ffffff;
-  background: #ABABAB; }
+  background: #000000; }
   .a:hover, .header__list li a:hover, .project__list li a:hover, .project__cat a:hover, .information a:hover {
-    background: #333;
-    color: white; }
+    background: red; }
 
 /* transitons */
 .t, body a, .home__box, .home__content, .home .cover, .header__logo-link, .project__logo-link, .header__list li a, .project__list li a, .header__link-info a, .project__link-info a, .nav-oculto-active {
@@ -294,7 +293,7 @@ body {
   letter-spacing: -0.1vw;
   text-align: center; }
 .header__title-link, .project__title-link {
-  color: #333;
+  color: #000000;
   text-decoration: none; }
 .header__nav, .project__nav {
   margin-bottom: 12vw; }
@@ -313,7 +312,7 @@ body {
   position: relative;
   text-align: center; }
   .header__logo img, .project__logo img {
-    width: 1rem;
+    width: 1.5rem;
     vertical-align: middle;
     margin-right: 0.5rem; }
 .header__icon, .project__icon {
@@ -396,21 +395,24 @@ p.image {
   padding: 5rem 0rem 5rem 0;
   font-size: 1.2rem;
   background: #f0f0f0;
-  display: block; }
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
   .information p {
     line-height: 1.5rem; }
   .information__content {
-    display: table;
-    overflow: hidden; }
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center; }
   .information__box {
-    width: 60%;
-    float: left; }
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
   .information__login {
-    width: 35%;
-    float: right; }
+    width: 35%; }
   .information a {
-    float: right;
-    margin-top: 1rem;
+    margin-top: 1.4rem;
     margin-left: 1rem; }
 
 .aside-navigator {

@@ -1,6 +1,6 @@
 /* colors */
 
-$negro: #333;
+$negro: #000000;
 $corporative: red;
 $gris: #f0f0f0;
 $grisOsc: #ABABAB;
@@ -11,14 +11,14 @@ $blanco: #ffffff;
 /* fonts */
 
 .font-1 {
-	font-family: 'fontawesome-webfont', sans-serif;
-	src:url(fonts/fontawesome-webfont.woff);
+	font-family: 'fontawesome-webfont';
+	src:url('/wp/wp-content/themes/hasi/assets/fonts/fontawesome-webfont.woff');
 	font-weight: 400;
 }
 
 .font-2 {
-	font-family: 'fontawesome-webfont', sans-serif;
-	src:url(fonts/fontawesome-webfont.woff);
+	font-family: 'fontawesome-webfont';
+	src:url('/wp/wp-content/themes/hasi/assets/fonts/fontawesome-webfont.woff');
 	font-weight: 600;
 }
 
@@ -40,10 +40,9 @@ $blanco: #ffffff;
 	padding: 0.85rem 1.5rem;
 	text-decoration: none;
 	color: $blanco;
-	background: $grisOsc;
+	background: $negro;
 	&:hover {
-		background: $negro;
-		color: white;
+		background: $corporative;
 	}
 }
 
