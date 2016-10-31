@@ -156,12 +156,12 @@ button {
 /* fonts */
 .font-1, body, .home__title, .header__link-info a, .project__link-info a, .project__title {
   font-family: 'fontawesome-webfont';
-  src: url("/wp/wp-content/themes/hasi/assets/fonts/fontawesome-webfont.woff");
+  src: url("../fonts/fontawesome-webfont.woff");
   font-weight: 400; }
 
 .font-2, body a, .header__text-logo, .project__text-logo {
   font-family: 'fontawesome-webfont';
-  src: url("/wp/wp-content/themes/hasi/assets/fonts/fontawesome-webfont.woff");
+  src: url("../fonts/fontawesome-webfont.woff");
   font-weight: 600; }
 
 /* structure */
@@ -296,7 +296,7 @@ body {
   color: #000000;
   text-decoration: none; }
 .header__nav, .project__nav {
-  margin-bottom: 12vw; }
+  margin-bottom: 8vw; }
 .header__list, .project__list {
   padding-bottom: 3vw;
   width: 90%;
@@ -307,7 +307,7 @@ body {
     margin-right: 1rem;
     margin-bottom: 1rem; }
 .header__logo, .project__logo {
-  margin-top: 12vw;
+  margin-top: 10vw;
   padding-bottom: 1rem;
   position: relative;
   text-align: center; }

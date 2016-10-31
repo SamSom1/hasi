@@ -22,7 +22,7 @@
 		@extend .grid;
 	}
 	&__nav {
-		margin-bottom: 12vw;
+		margin-bottom: 8vw;
 	}
 	&__list {
 		padding-bottom: 3vw;
@@ -44,7 +44,7 @@
 
 	&__logo {
 		@extend .grid;
-		margin-top: 12vw;
+		margin-top: 10vw;
 		padding-bottom: 1rem;
 		position: relative;
 		text-align: center;

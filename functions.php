@@ -68,4 +68,29 @@ function cc_body_tags() {
 }
 
 }
+
+
+
+//cosas añadidas para ajax que no funcionaron
+
+function my_enqueue_assets() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
+    wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), '1.0', true );
+    wp_localize_script( 'ajax-pagination', 'ajaxpagination', array(
+    	'ajaxurl' => admin_url( 'admin-ajax.php' )
+    ));
+}
+function theme_enqueue_assets(){
+
+  my_enqueue_assets();
+}
+
+add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
+add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
+
+function my_ajax_pagination() {
+    echo get_bloginfo( 'title' );
+    die();
+}
+
 ?>

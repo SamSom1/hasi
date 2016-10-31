@@ -18,9 +18,69 @@
 	<?php endwhile; endif; ?>
 	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php //comments_popup_script(); // off by default ?>
-	<?php wp_head(); ?>
+	<?php wp_head();  ?>
 	<?php if (is_home()): ?>
 	<?php endif; ?>
+
+	<script language="javascript">
+
+
+function handler (){
+	$('li').off('click');
+	$('li').on('click',function(value){
+			// do whatever you want here
+			$cat = $(this).attr('value');
+
+			$('.home__content').each(function(){
+				var contiene = false;
+				var valueC = $(this).attr('value').split(",");
+				$.each(valueC,function(index,value){
+				//	alert(value + " cat es " + $cat)
+
+					if(value==$cat)
+					{
+						contiene = true;
+					}
+
+
+				});
+
+				alert(valueC + "es" + contiene + "cat" + $cat);
+
+				if(contiene==true)
+				{
+					$(this).parent().show();//.css('display', 'block');
+				}
+				if(contiene==false) {
+					$(this).parent().hide();//.css('display', 'false');
+				}
+			});
+
+
+
+			/*$.ajax({
+					url: ajaxpagination.ajaxurl,
+					type: 'post',
+					data: {
+						action: 'ajax_pagination'
+					},
+					success: function( result ) {
+						alert( result );
+					}
+				})*/
+
+	});
+
+
+
+}
+
+
+
+	</script>
+
+
+
 </head>
 <body
 <?php cc_body_tags() ?>>
@@ -28,12 +88,13 @@
 
 <!-- example scrolldown ! -->
 
-    <a href="#" class="more" id="know_more_front">
+    <a href="#" >
       Go to
     </a>
 
 <header class="header">
-	<?php get_template_part('partial/information'); ?>
+	<?php global $cat; $cat='6'; ?> <!-- categoria seleccionada-->
+	<?php  get_template_part('partial/information'); ?>
 
 	<section class="header__logo">
 		<?php if (!is_single()) : while ( have_posts() ) : the_post(); ?>
@@ -48,7 +109,7 @@
 			<span>
 				<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/10/spot.gif"/>
 				</img>
-				<a href="<?php bloginfo('url'); ?>" class="header__logo-link">
+			<!--	<a href="<?php if (!is_single()) { bloginfo('url'); } if (!is_single()) { '#'; } ?>" class="header__logo-link" <?php if (is_single()) { 'id="know_more_front"' ;} ?> >-->
 					Watchoutfreedom
 				</a>
 			</span>
