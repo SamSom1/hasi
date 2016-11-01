@@ -1,9 +1,9 @@
 <section class="header__box">
-	<h1 class="header__title">
+	<h1 class="header__title" id="altura_nav">
 		The collective idea studio.
 	</h1>
 </section>
-<nav class="header__nav">
+<nav class="header__nav" >
 	<ul class="header__list">
 
 <!--		<?php
