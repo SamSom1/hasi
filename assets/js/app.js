@@ -64,10 +64,21 @@ $(document).ready(function() {
       $.scrollTo('#front_page',800);
       return false;
     }
+
+
 );
 
   }
 );
+
+$(function(){
+   $('#know_more_front_title').on('click',function() {
+     $.scrollTo('#front_page',800);
+     return false;
+   }
+ );
+
+   }
+ );
 }
 )
-

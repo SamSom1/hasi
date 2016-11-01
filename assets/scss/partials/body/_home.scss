@@ -8,12 +8,14 @@
 		@extend .grid;
 	}
 	&__box {
-		width: 32%;
+		width: 31.3%;
+		margin-top: 0;
 		float: left;
 		@extend .t;
+		margin-right: 1%;
+		padding-left: 1%;
 		&:nth-child(3n+2) {
-			margin-right: 2%;
-			margin-left: 2%;
+
 		}
 
 	}
@@ -25,8 +27,9 @@
 	}
 	&__content {
 		width: 100%;
+		margin-top: 0;
+
 		position: relative;
-		height: 250px;
 		opacity: 0.7;
 		background-color: $grisOsc;
 		border-radius: 0.5rem;
@@ -57,9 +60,6 @@
 		background-color: rgba(128,64,0,1.0);
 	}
 }
-
-
-
 
 	&__link-table {
 		display: block;

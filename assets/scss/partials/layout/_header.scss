@@ -42,6 +42,11 @@
 		}
 	}
 
+	&__catSelec {
+
+		background-color: $corporative;
+	}
+
 	&__logo {
 		@extend .grid;
 		margin-top: 10vw;

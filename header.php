@@ -10,8 +10,18 @@
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+
 	<!-- responsive -->
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+
+	<!-- js scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/assets/js/app.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.scrollTo.min.js"></script>
+
 	<!-- mascosuitas -->
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php if (is_single()) : while ( have_posts() ) : the_post(); ?>
@@ -22,42 +32,21 @@
 	<?php if (is_home()): ?>
 	<?php endif; ?>
 
-	<script language="javascript">
+	<script type="text/javascript">
 
 
 function handler (){
+
+
 	$('li').off('click');
 	$('li').on('click',function(value){
 			// do whatever you want here
-			$cat = $(this).attr('value');
 
-			$('.home__content').each(function(){
-				var contiene = false;
-				var valueC = $(this).attr('value').split(",");
-				$.each(valueC,function(index,value){
-				//	alert(value + " cat es " + $cat)
+			 $cat = $(this).attr('value');
+			 sessionStorage.setItem('cat',$cat);
 
-					if(value==$cat)
-					{
-						contiene = true;
-					}
-
-
-				});
-
-				alert(valueC + "es" + contiene + "cat" + $cat);
-
-				if(contiene==true)
-				{
-					$(this).parent().show();//.css('display', 'block');
-				}
-				if(contiene==false) {
-					$(this).parent().hide();//.css('display', 'false');
-				}
-			});
-
-
-
+			 HidePosts();
+			 CatSelect();
 			/*$.ajax({
 					url: ajaxpagination.ajaxurl,
 					type: 'post',
@@ -71,9 +60,67 @@ function handler (){
 
 	});
 
-
-
 }
+
+function HidePosts(){
+
+
+					$('.home__content').each(function(){
+						var contiene = false;
+						var valueC = $(this).attr('value').split(",");
+						$.each(valueC,function(index,value){
+						//	alert(value + " cat es " + $cat)
+
+							if(value==$cat)
+							{
+								contiene = true;
+							}
+
+
+						});
+
+						//alert(valueC + "es" + contiene + "cat" + $cat);
+
+						if(contiene==true)
+						{
+							$(this).parent().show();//.css('display', 'block');
+						}
+						if(contiene==false) {
+							$(this).parent().hide();//.css('display', 'false');
+						}
+					});
+	}
+
+
+
+	$(document).ready(function(){
+
+		if(sessionStorage.getItem('cat')!=null)
+		{
+			$cat = sessionStorage.getItem('cat');
+			HidePosts();
+			CatSelect();
+
+			sessionStorage.removeItem('cat');
+		}
+
+	} );
+
+	function CatSelect(){
+		$('.theLink').each(
+		function(){
+			if($(this).attr('value')== sessionStorage.getItem('cat'))
+			{$(this).css("background-color", "red");}
+
+		if($(this).attr('value')!= sessionStorage.getItem('cat'))
+		{$(this).css("background-color", "black" );}
+
+	});
+}
+	// or:
+
+
+
 
 
 
@@ -88,9 +135,6 @@ function handler (){
 
 <!-- example scrolldown ! -->
 
-    <a href="#" >
-      Go to
-    </a>
 
 <header class="header">
 	<?php global $cat; $cat='6'; ?> <!-- categoria seleccionada-->
@@ -106,10 +150,10 @@ function handler (){
 		</section>
 			<?php endwhile; endif; ?>
 		<div class="header__text-logo">
-			<span>
+			<span >
 				<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/10/spot.gif"/>
 				</img>
-			<!--	<a href="<?php if (!is_single()) { bloginfo('url'); } if (!is_single()) { '#'; } ?>" class="header__logo-link" <?php if (is_single()) { 'id="know_more_front"' ;} ?> >-->
+			<a href="<?php if (!is_single()) { echo bloginfo('url'); } if (is_single()) {echo '#'; } ?>" class="header__logo-link" id="<?php if (is_single()) {echo 'know_more_front_title' ;} ?>" >
 					Watchoutfreedom
 				</a>
 			</span>

@@ -219,11 +219,11 @@ body {
 .home__content {
   overflow: hidden; }
 .home__box {
-  width: 32%;
-  float: left; }
-  .home__box:nth-child(3n+2) {
-    margin-right: 2%;
-    margin-left: 2%; }
+  width: 31.3%;
+  margin-top: 0;
+  float: left;
+  margin-right: 1%;
+  padding-left: 1%; }
 .home__list-content {
   overflow: hidden;
   width: 90%;
@@ -231,8 +231,8 @@ body {
   max-width: 1116px; }
 .home__content {
   width: 100%;
+  margin-top: 0;
   position: relative;
-  height: 250px;
   opacity: 0.7;
   background-color: #ABABAB;
   border-radius: 0.5rem;
@@ -306,6 +306,8 @@ body {
     display: inline-block;
     margin-right: 1rem;
     margin-bottom: 1rem; }
+.header__catSelec, .project__catSelec {
+  background-color: red; }
 .header__logo, .project__logo {
   margin-top: 10vw;
   padding-bottom: 1rem;
@@ -442,12 +444,9 @@ p.image {
 /* RWD */
 @media only screen and (max-width: 860px) {
   .home__box {
-    width: 45%; }
-    .home__box:nth-child(3n+2) {
-      margin-right: 0;
-      margin-left: 0; }
-    .home__box:nth-child(odd) {
-      margin-right: 10%; } }
+    width: 48%;
+    margin-right: 1%;
+    padding-left: 1%; } }
 @media only screen and (max-width: 800px) {
   .header__text-logo, .project__text-logo {
     font-size: 0.5rem; }
