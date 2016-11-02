@@ -7,15 +7,16 @@
 		padding-bottom: 3rem;
 		letter-spacing: -0.1vw;
 		text-align: center;
-		@extend .font-1;
+		@extend .font-2;
 	}
 	&__main {
 		font-size: 100%;
-		line-height: 1.37rem;
+		margin : 0 auto;
+		width: 90%;
 		p {
-			font-size: 1.37rem;
+			font-size: 1.3rem;
 			line-height: 1.75rem;
-			width: 90%;
+			width: 30%;
 			max-width: 600px;
 			margin: 2.5rem auto
 		}
@@ -24,7 +25,7 @@
 		@extend .grid;
 		width: 90%;
 		margin: 0 auto;
-		margin-bottom: 14vw;
+		margin-bottom: 8vw;
 		text-align: center;
 
 		a {

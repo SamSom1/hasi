@@ -76,7 +76,6 @@ function HidePosts(){
 								contiene = true;
 							}
 
-
 						});
 
 						//alert(valueC + "es" + contiene + "cat" + $cat);
@@ -109,13 +108,20 @@ function HidePosts(){
 	function CatSelect(){
 		$('.theLink').each(
 		function(){
+			var back = ["#FFD500","#FF3C00","#02B7A0","#294DFF"];
+ 			var rand = back[Math.floor(Math.random() * back.length)];
+
 			if($(this).attr('value')== sessionStorage.getItem('cat'))
-			{$(this).css("background-color", "red");}
+			{
+				$(this).css({"background-color": rand,"border-color": rand,"color": "white"
+			});
+			}
 
-		if($(this).attr('value')!= sessionStorage.getItem('cat'))
-		{$(this).css("background-color", "black" );}
+			if($(this).attr('value')!= sessionStorage.getItem('cat'))
+			{$(this).css({"border-color": "", "background-color": "","color": ""});
+	}
 
-	});
+	})
 }
 	// or:
 
@@ -150,12 +156,12 @@ function HidePosts(){
 		</section>
 			<?php endwhile; endif; ?>
 		<div class="header__text-logo">
-			<span >
-				<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/10/spot.gif"/>
-				</img>
-			<a href="<?php if (!is_single()) { echo bloginfo('url'); } if (is_single()) {echo '#'; } ?>" class="header__logo-link" id="<?php if (is_single()) {echo 'know_more_front_title' ;} ?>" >
-					Watchoutfreedom
-				</a>
+			<span id="<?php if (is_single()) {echo 'know_more_front_title' ;} ?>">
+
+			<a href="<?php if (!is_single()) { echo bloginfo('url'); } if (is_single()) {echo '#'; } ?>" class="header__logo-link"  >
+				<img style="cursor:pointer;"  src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/10/spot.gif"/>
+				</img>	Watchoutfreedom
+			</a>
 			</span>
 		</div>
 	</section>

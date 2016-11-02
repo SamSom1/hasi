@@ -1,24 +1,30 @@
-/* colors */
+/* colors
+#FFD500 AMARILLO
+#FF3C00 ROJO
+#02B7A0 VERDE
+#294DFF azul
+*/
 
 $negro: #000000;
-$corporative: red;
+$corporative: #FFD500;
 $gris: #f0f0f0;
-$grisOsc: #ABABAB;
+$grisOsc: #303030;
 $blanco: #ffffff;
+
 
 
 /* fonts */
 
 .font-1 {
-	font-family: 'fontawesome-webfont';
+	font-family: Georgia,serif;
 	src:url('../fonts/fontawesome-webfont.woff');
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .font-2 {
-	font-family: 'fontawesome-webfont';
+	font-family: Helvetica, sans-serif;
 	src:url('../fonts/fontawesome-webfont.woff');
-	font-weight: 600;
+	font-weight: 100;
 }
 
 /* structure */
@@ -31,18 +37,28 @@ $blanco: #ffffff;
 }
 
 .a {
-	border-radius: 10rem;
+	border-radius: 0.3rem;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 0.85rem;
 	display: inline-block;
 	padding: 0.85rem 1.5rem;
 	text-decoration: none;
-	color: $blanco;
-	background: $negro;
+	color: black;
+	background-color: $blanco;
 	&:hover {
-		background: $corporative;
+		background-color: $grisOsc;
+		border-color: $grisOsc;
+		color: white;
+
 	}
+}
+
+.strong {
+font-weight: 300px;
 }
 
 /* transitons */

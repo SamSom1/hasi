@@ -8,12 +8,23 @@ var acceptedCookies = function() {
   return document.cookie.indexOf('acceptCookies=madridfree') > -1;
 }
 
+//ANIMATE MOUSE
+$(document).on('mousemove', function(e){
+  $('#imgfollow').css({
+     left:  e.pageX,
+     top:   e.pageY
+  });
+});
+
+
 $(document).ready(function() {
   $("div:has(img)").addClass("image");
   $("p:has(img)").addClass("image");
 //  $('#simple-menu').side({
   //  side: 'right'
   //});
+
+
 
   $('.rrss-share a.fb').on('click', function() {
     var url = $(this).attr('data-href');
@@ -61,7 +72,7 @@ $(document).ready(function() {
 
  $(function(){
     $('#know_more_front').on('click',function() {
-      $.scrollTo('#front_page',800);
+      $.scrollTo('#front_page',300);
       return false;
     }
 
@@ -73,7 +84,7 @@ $(document).ready(function() {
 
 $(function(){
    $('#know_more_front_title').on('click',function() {
-     $.scrollTo('#front_page',800);
+     $.scrollTo('#front_page',300);
      return false;
    }
  );

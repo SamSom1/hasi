@@ -10,6 +10,7 @@
 	}
 	&__title {
 		font-size: 4.5vw;
+		@extend .font-2;
 		padding-bottom: 3rem;
 		letter-spacing: -0.1vw;
 		text-align: center;
@@ -76,27 +77,14 @@
 		position: fixed;
 		top: 5%;
 		right: 5%;
+
 		a {
-			display: inline-block;
-
-			border-radius: 3rem;
-			border: 2px solid $grisOsc;
-			font-size: 0.85rem;
-
-			padding: 0.8rem;
-			color: $grisOsc;
-			text-decoration: none;
-			opacity: 0.5;
-			font-weight: bolder;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			@extend .font-1;
+			font-size: 0.7rem;
+			padding: 0.7rem;
+			@extend .a;
+			@extend .font-2;
 			@extend .t;
-			&:hover {
-				opacity: 1;
-				background-color: $grisOsc;
-				color: white;
-			}
+
 		}
 	}
 }

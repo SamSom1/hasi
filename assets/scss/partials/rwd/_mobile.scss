@@ -16,9 +16,9 @@
 	.home {
 		&__box {
 			width: 100%;
-			float: none;
+			margin-right: 1%;
+			padding-left: 0%;
 			&:nth-child(odd) {
-				margin-right: 0;
 			}
 		}
 	}

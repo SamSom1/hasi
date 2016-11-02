@@ -1,7 +1,4 @@
 
-
-
-
 .home {
 	&__content {
 		overflow: hidden;
@@ -47,17 +44,18 @@
 
 
 	}
+
 .cover{
 	background-size:cover;
-	width: 100%;
+	width: 101%;
 	display: table;
 	height: 250px;
 	border-radius: 0.5rem;
-	background-color: rgba(128,64,0,0.75);
+	background-color: rgba(255,60,0,0.5);
 
 	@extend .t;
 	&:hover {
-		background-color: rgba(128,64,0,1.0);
+		background-color: rgba(255,60,0,1.0);
 	}
 }
 
@@ -85,7 +83,7 @@
 		vertical-align: middle;
 		color: white;
 		opacity: 1;
-		@extend .font-1;
+		@extend .font-2;
 		font-size: 1.4rem;
 		font-weight: bold;
 		text-transform: uppercase;
