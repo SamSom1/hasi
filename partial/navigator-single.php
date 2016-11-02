@@ -1,6 +1,5 @@
 <nav class="header__nav">
-	<ul class="header__list">
-
+	<ul class="header__list" >
 
 
 <!--		<?php

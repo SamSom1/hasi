@@ -1,4 +1,5 @@
-<section class="header__box">
+<div id="front_page"></div>
+<section class="header__box" >
 	<h1 class="header__title" id="altura_nav">
 		The collective idea studio.
 	</h1>

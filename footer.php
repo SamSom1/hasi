@@ -1,4 +1,4 @@
-<div id="front_page">
+<div >
 </div>
 
 <footer class="foot">

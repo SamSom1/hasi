@@ -5,8 +5,13 @@
 	font-size: 1.5rem;
 	margin-top: 10vw;
 	margin-bottom: 10vw;
+	color: $negro;
 
 	text-align: center;
 	padding: 5rem 0;
+a{
+@extend .aSinmarco;
+
+}
 
 }

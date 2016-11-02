@@ -154,17 +154,17 @@ button {
 
 /* colors
 #FFD500 AMARILLO
-#FF3C00 ROJO
+	#FF3C00 ROJO
 #02B7A0 VERDE
 #294DFF azul
 */
 /* fonts */
-.font-1, body {
+.font-1, body, .project__main, .project__main a {
   font-family: Georgia,serif;
   src: url("../fonts/fontawesome-webfont.woff");
   font-weight: 500; }
 
-.font-2, body a, .home__title, .header__title, .project__title, .header__text-logo, .project__text-logo, .header__link-info a, .project__link-info a, .foot {
+.font-2, body a, .home__title, .header__title, .project__title, .header__text-logo, .project__text-logo, .header__link-info a, .project__link-info a, .foot, .aside-more-post a {
   font-family: Helvetica, sans-serif;
   src: url("../fonts/fontawesome-webfont.woff");
   font-weight: 100; }
@@ -175,7 +175,7 @@ button {
   margin: 1rem auto;
   max-width: 980px; }
 
-.a, .header__list li a, .project__list li a, .header__link-info a, .project__link-info a, .project__cat a, .information a {
+.a, .header__list li a, .project__list li a, .header__link-info a, .project__link-info a, .project__cat a, .information a, .aside-more-post a {
   border-radius: 0.3rem;
   border-style: solid;
   border-color: black;
@@ -188,10 +188,18 @@ button {
   text-decoration: none;
   color: black;
   background-color: #ffffff; }
-  .a:hover, .header__list li a:hover, .project__list li a:hover, .header__link-info a:hover, .project__link-info a:hover, .project__cat a:hover, .information a:hover {
+  .a:hover, .header__list li a:hover, .project__list li a:hover, .header__link-info a:hover, .project__link-info a:hover, .project__cat a:hover, .information a:hover, .aside-more-post a:hover {
     background-color: #303030;
     border-color: #303030;
     color: white; }
+  .a a, .header__list li a a, .project__list li a a, .header__link-info a a, .project__link-info a a, .project__cat a a, .information a a, .aside-more-post a a {
+    color: black; }
+    .a a:hover, .header__list li a a:hover, .project__list li a a:hover, .header__link-info a a:hover, .project__link-info a a:hover, .project__cat a a:hover, .information a a:hover, .aside-more-post a a:hover {
+      color: white; }
+
+.aSinmarco, .foot a {
+  color: black;
+  font-weight: 800; }
 
 .strong {
   font-weight: 300px; }
@@ -222,7 +230,6 @@ body {
   font-size: 62.7%; }
   body a {
     display: inline-block;
-    color: black;
     text-decoration: none;
     opacity: 1;
     letter-spacing: 2px; }
@@ -338,7 +345,7 @@ body {
   font-size: 1.2vw;
   text-transform: uppercase; }
 .header__link-info, .project__link-info {
-  position: fixed;
+  position: absolute;
   top: 5%;
   right: 5%; }
   .header__link-info a, .project__link-info a {
@@ -349,6 +356,7 @@ body {
   font-size: 1.5rem;
   margin-top: 10vw;
   margin-bottom: 10vw;
+  color: #000000;
   text-align: center;
   padding: 5rem 0; }
 
@@ -364,13 +372,16 @@ body {
   .project__main {
     font-size: 100%;
     margin: 0 auto;
-    width: 90%; }
+    width: 100%; }
     .project__main p {
-      font-size: 1.3rem;
-      line-height: 1.75rem;
-      width: 30%;
-      max-width: 600px;
-      margin: 2.5rem auto; }
+      font-size: 1.6vw;
+      line-height: 2.6vw;
+      margin: 2.5rem auto;
+      width: 700px;
+      max-width: 70%; }
+    .project__main a {
+      font-weight: bold;
+      letter-spacing: 0.5px; }
   .project__cat {
     width: 90%;
     margin: 0 auto;
@@ -401,8 +412,6 @@ p.image {
   display: block;
   text-align: center;
   margin: 0 auto; }
-  .information p {
-    line-height: 1.5rem; }
   .information__content {
     display: block;
     overflow: hidden;
@@ -411,14 +420,16 @@ p.image {
   .information__box {
     width: 80%;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.8rem; }
     .information__box span {
       font-weight: 900; }
     .information__box p {
-      padding-bottom: 2rem; }
+      padding-bottom: 1.8rem; }
   .information__login {
     width: 35%; }
   .information a {
+    line-height: 0.8rem;
     margin-top: 1.4rem;
     margin-left: 1rem; }
 
@@ -429,39 +440,56 @@ p.image {
 .aside-more-post {
   padding: 0.8vw 0 14vw 0;
   text-align: center;
-  font-weight: bold;
-  color: #303030; }
+  font-weight: lighter;
+  margin: 0 auto; }
+  .aside-more-post a {
+    font-weight: bold;
+    text-align: center; }
   .aside-more-post span {
-    width: 50%;
+    width: 90%;
+    display: inline;
     text-align: center;
+    margin: 0 auto;
     text-transform: capitalize;
-    font-size: 1.37rem;
-    border-radius: 10rem;
+    font-size: 1.37vw;
+    line-height: 2vw;
     letter-spacing: 1px;
-    display: inline-block;
-    padding: 0.85rem 1.5rem;
-    text-decoration: none;
-    background: #f0f0f0;
-    color: grisOsc; }
+    padding: 0.85rem 1.5rem 0.85rem 2.5rem;
+    text-decoration: none; }
     .aside-more-post span:hover {
       cursor: pointer; }
 
 /* RWD */
 @media only screen and (max-width: 860px) {
-  .home__box {
+  .home__box, .project__box {
     width: 48%;
     margin-right: 1%;
-    padding-left: 1%; } }
-@media only screen and (max-width: 800px) {
+    padding-left: 1%; }
+  .home__main p, .project__main p {
+    font-size: 2.6vw;
+    line-height: 4.0vw; }
+
+  .aside-more-post span {
+    font-size: 2.6vw;
+    line-height: 4.0vw; } }
+@media only screen and (max-width: 480px) {
   .header__text-logo, .project__text-logo {
     font-size: 0.5rem; }
   .header__title, .project__title {
     font-size: 2rem; }
+  .header__main p, .project__main p {
+    width: 90%;
+    font-size: 1.3rem;
+    line-height: 1.9rem; }
 
   .home__box {
     width: 100%;
     margin-right: 1%;
-    padding-left: 0%; } }
+    padding-left: 0%; }
+
+  .aside-more-post span {
+    font-size: 1rem;
+    line-height: 1.5rem; } }
 /* webfonts */
 
 /*# sourceMappingURL=front.css.map */

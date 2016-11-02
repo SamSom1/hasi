@@ -141,6 +141,11 @@ function HidePosts(){
 
 <!-- example scrolldown ! -->
 
+		<section class="header__link-info">
+			<a href="#" onclick="$('.nav-oculto').toggleClass('nav-oculto-active');$('.btn-mobile').toggleClass('btn-mobile-active');" class="btn-mobile">
+							 info
+					</a>
+		</section>
 
 <header class="header">
 	<?php global $cat; $cat='6'; ?> <!-- categoria seleccionada-->
@@ -149,11 +154,6 @@ function HidePosts(){
 	<section class="header__logo">
 		<?php if (!is_single()) : while ( have_posts() ) : the_post(); ?>
 
-		<section class="header__link-info">
-			<a href="#" onclick="$('.nav-oculto').toggleClass('nav-oculto-active');$('.btn-mobile').toggleClass('btn-mobile-active');" class="btn-mobile">
-							 info
-					</a>
-		</section>
 			<?php endwhile; endif; ?>
 		<div class="header__text-logo">
 			<span id="<?php if (is_single()) {echo 'know_more_front_title' ;} ?>">

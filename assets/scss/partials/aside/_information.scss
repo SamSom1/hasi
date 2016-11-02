@@ -16,7 +16,6 @@
 	text-align: center;
 	margin: 0 auto;
 	p{
-		line-height: 1.5rem;
 	}
 	&__content {
 		@extend .grid;
@@ -24,18 +23,20 @@
 		overflow: hidden;
 		width: 100%;
 		text-align: center;
+
 	}
 	&__box {
 		width: 80%;
 		margin: 0 auto;
 		text-align: center;
+		line-height: 1.8rem;
 
 		span{
 			font-weight: 900;
 		}
 		p
 		{
-			padding-bottom: 2rem;
+			padding-bottom: 1.8rem;
 		}
 	}
 	&__login {
@@ -44,6 +45,7 @@
 
 	a{
 		@extend .a;
+		line-height: 0.8rem;
 		margin-top: 1.4rem;
 		margin-left: 1rem;
 

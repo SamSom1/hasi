@@ -4,4 +4,4 @@
       //echo the_post()->ID;
       ?>
 
-    </div>    <div class="project__main">      <?php the_content("Sigue leyendo"); ?>    </div>    <!-- main -->  <?php endwhile; else: ?>  <?php include (TEMPLATEPATH . '/404.php'); ?><?php endif; ?></article><aside class="aside-more-post"><?php    //previous_post_link('<span class="left">&laquo; %link</span>');    next_post_link('<span class="right">Next :<strong> %link &raquo;</strong></span>');?></aside><aside class="aside-navigator">  <?php get_template_part('partial/navigator'); ?></aside><?php get_footer(); ?>
+    </div>    <div class="project__main">      <?php the_content("Sigue leyendo"); ?>    </div>    <!-- main -->  <?php endwhile; else: ?>  <?php include (TEMPLATEPATH . '/404.php'); ?><?php endif; ?></article><aside class="aside-more-post"><?php    //previous_post_link('<span class="left">&laquo; %link</span>');    next_post_link('<span class="right"><p>Next :</p></br></br><strong> %link</strong></span>');?></aside><aside class="aside-navigator">  <?php get_template_part('partial/navigator'); ?></aside><?php get_footer(); ?>

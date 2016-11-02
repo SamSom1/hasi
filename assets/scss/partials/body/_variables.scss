@@ -1,6 +1,6 @@
 /* colors
 #FFD500 AMARILLO
-#FF3C00 ROJO
+	#FF3C00 ROJO
 #02B7A0 VERDE
 #294DFF azul
 */
@@ -55,7 +55,24 @@ $blanco: #ffffff;
 		color: white;
 
 	}
+	a{
+		color: black;
+
+		&:hover {
+
+			color: white;
+
+		}
+
+
+	}
 }
+
+ .aSinmarco {
+	 color: black;
+	 font-weight: 800;
+
+ }
 
 .strong {
 font-weight: 300px;
