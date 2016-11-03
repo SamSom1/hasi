@@ -1,10 +1,10 @@
 .project {
-	padding: 0 0 3vw 0;
+	padding: 0 0 2vw 0;
 	&__title {
 		@extend .grid;
 		margin-bottom: 2rem;
 		font-size: 4.5vw;
-		padding-bottom: 3rem;
+		padding-bottom: 3vw;
 		letter-spacing: -0.1vw;
 		text-align: center;
 		@extend .font-2;
@@ -25,8 +25,13 @@
 		}
 		a {
 			@extend .font-1;
+			color: $negro;
 			font-weight: bold;
 			letter-spacing: 0.5px;
+			&:hover {
+
+				text-decoration: underline;
+			}
 		}
 	}
 	&__cat {
@@ -48,8 +53,12 @@ p.image {
 	width: 100%;
 	max-width: 980px;
 	text-align: center;
+
 	img {
+		display: block;
 		max-width: 100%;
 		height: auto;
+		margin: 0;
+		padding: 0;
 	}
 }

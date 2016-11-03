@@ -1,15 +1,21 @@
 @media only screen and (max-width: 480px) {
 	.header, .project {
 		&__logo{
+			margin-top: 1vw;
+			padding-bottom: 0rem;
+
 		}
 
 		&__text-logo {
 			font-size: 0.5rem;
-
+			padding: 1rem 0 0.5rem 0;
 		}
 
+
 	&__title {
+
 		font-size: 2rem;
+		padding-bottom: 1rem;
 
 		}
 
@@ -21,8 +27,38 @@
 			line-height: 1.9rem;
 		}
 	}
+	&__list {
+		width: 98%;
+
+		li {
+			display: inline-block;
+			margin-right: 1vw;
+			margin-bottom: 1vw;
+
+			a {
+				font-size: 0.4rem;
+				font-weight: normal;
+				border-radius: 4px;
+				padding: 0.5rem 0.8rem;
+			}
+		}
 	}
-	.home {
+
+
+	&__link-info {
+		top: 2%;
+		right: 2%;
+
+		a {
+			font-size: 0.4rem;
+			padding: 0.6rem;
+
+		}
+	}
+
+}
+
+.home {
 		&__box {
 			width: 100%;
 			margin-right: 1%;
@@ -37,6 +73,15 @@
 			font-size: 1rem;
 			line-height: 1.5rem;
 			}
+	}
+
+}
+.information {
+	font-size: 1.1rem;
+	line-height: 1.9rem;
+	&__box {
+		width: 90%;
+
 	}
 
 }

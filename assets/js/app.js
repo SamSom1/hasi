@@ -84,12 +84,26 @@ $(document).ready(function() {
 
 $(function(){
    $('#know_more_front_title').on('click',function() {
-     $.scrollTo('#front_page',300);
+     $.scrollTo('#front_nav',300);
      return false;
    }
  );
 
    }
  );
+
+
+ $(function(){
+    $('.tag').on('click',function() {
+      $.scrollTo('#tag_top',300);
+      return false;
+    }
+  );
+
+    }
+  );
+
+
+
 }
 );

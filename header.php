@@ -60,6 +60,16 @@ function handler (){
 
 	});
 
+//RESTORE TO DEFAULT CAT ALL
+	$('.header__text-logo a').on('click',function(value){
+			// do whatever you want here
+
+			sessionStorage.removeItem('cat');
+
+	});
+
+
+
 }
 
 function HidePosts(){
@@ -90,6 +100,27 @@ function HidePosts(){
 					});
 	}
 
+	function CatSelect(){
+		$('.theLink').each(
+		function(){
+			var back = ["#FFD500","#FF3C00","#02B7A0","#294DFF,#2980B9,#E74C3C,#16A085,#E67E22,#F39C12,#C0392B"];
+			var rand = back[$cat-Math.floor($cat/10)];
+
+			//var rand = back[Math.floor(Math.random() * back.length)];
+
+			if($(this).attr('value')== sessionStorage.getItem('cat'))
+			{
+				console.log(Math.floor($cat/10));
+				$(this).css({"background-color": rand,"border-color": rand,"color": "white"
+			});
+			}
+
+			if($(this).attr('value')!= sessionStorage.getItem('cat'))
+			{$(this).css({"border-color": "", "background-color": "","color": ""});
+	}
+
+	})
+}
 
 
 	$(document).ready(function(){
@@ -105,24 +136,7 @@ function HidePosts(){
 
 	} );
 
-	function CatSelect(){
-		$('.theLink').each(
-		function(){
-			var back = ["#FFD500","#FF3C00","#02B7A0","#294DFF"];
- 			var rand = back[Math.floor(Math.random() * back.length)];
 
-			if($(this).attr('value')== sessionStorage.getItem('cat'))
-			{
-				$(this).css({"background-color": rand,"border-color": rand,"color": "white"
-			});
-			}
-
-			if($(this).attr('value')!= sessionStorage.getItem('cat'))
-			{$(this).css({"border-color": "", "background-color": "","color": ""});
-	}
-
-	})
-}
 	// or:
 
 
@@ -140,21 +154,20 @@ function HidePosts(){
 <!-- pruebas js -->
 
 <!-- example scrolldown ! -->
-
+<?php if (!is_single()) : while ( have_posts() ) : the_post(); ?>
 		<section class="header__link-info">
 			<a href="#" onclick="$('.nav-oculto').toggleClass('nav-oculto-active');$('.btn-mobile').toggleClass('btn-mobile-active');" class="btn-mobile">
 							 info
 					</a>
 		</section>
+	<?php endwhile; endif; ?>
 
 <header class="header">
 	<?php global $cat; $cat='6'; ?> <!-- categoria seleccionada-->
 	<?php  get_template_part('partial/information'); ?>
 
 	<section class="header__logo">
-		<?php if (!is_single()) : while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; endif; ?>
 		<div class="header__text-logo">
 			<span id="<?php if (is_single()) {echo 'know_more_front_title' ;} ?>">
 

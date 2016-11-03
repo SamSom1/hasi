@@ -15,6 +15,8 @@
 		}
 		&__main {
 			p{
+				width: 90%;
+
 				font-size: 2.6vw;
 				line-height: 4.0vw;
 			}
@@ -22,11 +24,39 @@
 
 
 
+
 	}
+
+.header{
+	&__logo {
+		margin-top: 5vw;
+
+	}
+	&__title {
+padding-bottom: 2vw
+	}
+	&__text-logo {
+		font-size: 1.7vw;
+	}
+	&__list {
+		width: 100%;
+
+		li {
+			margin-right: 0.6rem;
+			margin-bottom: 0.6rem;
+			a {
+				font-size: 1.7vw;
+
+
+			}
+		}
+	}
+}
 .aside-more-post {
 	span {
 		font-size: 2.6vw;
-		line-height: 4.0vw;	}
+		line-height: 4.0vw;
+	}
 }
 
 
