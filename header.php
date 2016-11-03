@@ -103,14 +103,14 @@ function HidePosts(){
 	function CatSelect(){
 		$('.theLink').each(
 		function(){
-			var back = ["#FFD500","#FF3C00","#02B7A0","#294DFF,#2980B9,#E74C3C,#16A085,#E67E22,#F39C12,#C0392B"];
-			var rand = back[$cat-Math.floor($cat/10)];
+			var back = ["#FFD500","#FF3C00","#02B7A0","#3399FF","#2980B9","#E74C3C","#16A085","#E67E22","#F39C12","#C0392B"];
+			var rand = back[$cat-(Math.floor($cat/10)*10)];
 
 			//var rand = back[Math.floor(Math.random() * back.length)];
 
 			if($(this).attr('value')== sessionStorage.getItem('cat'))
 			{
-				console.log(Math.floor($cat/10));
+				console.log($cat-(Math.floor($cat/10)*10));
 				$(this).css({"background-color": rand,"border-color": rand,"color": "white"
 			});
 			}
