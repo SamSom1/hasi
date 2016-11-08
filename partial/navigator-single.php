@@ -19,8 +19,6 @@
 
 		}
 	 $values = array(
-		 `fields` => `names`,
-
 		);
  $categories = get_the_category();
  foreach ($categories as $category) {

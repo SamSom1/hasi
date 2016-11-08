@@ -24,14 +24,14 @@
 			$onclick = 'return false';
 
 		}
+
 	 $values = array(
-		 `orderby` => `name`,
+		 /*`orderby` => `name`,
 		 `order` => `ASC`,
 		 `echo` => 1,
 		 `selected` => $kat = get_query_var( `cat` ),
 		 `name` => 'cat',
-		 `id` => ``,
-		 `taxonomy` => `persons`
+		 `id` => ``,*/
 		);
  $categories = get_categories($values);
  foreach ($categories as $category) {
