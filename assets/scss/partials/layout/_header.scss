@@ -34,6 +34,7 @@
 		li {
 			display: inline-block;
 			margin: 0.5vw 0.5vw;
+			cursor: pointer;
 			a {
 				@extend .a;
 				@extend .t;

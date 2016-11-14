@@ -43,6 +43,17 @@
 	 echo $option;
  }
 
+	if(!is_single())
+		{
+		 $option = '<li  value="-1"><a href="'.$address.'" class="theLink" onclick="handler(this.value);'.$onclick.'" value="-1">';
+	 $option .= "all";
+	// $option .= $category->cat_ID;;
+	 $option .= '</a></li>';
+	 echo $option;	
+
+		}
+
+
 ?>
 	</ul>
 </nav>

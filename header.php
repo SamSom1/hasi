@@ -18,6 +18,8 @@
 
 	<!-- js scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
 	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/app.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.scrollTo.min.js"></script>
@@ -36,7 +38,6 @@
 
 
 function handler (){
-
 
 	$('li').off('click');
 	$('li').on('click',function(value){
@@ -81,10 +82,11 @@ function HidePosts(){
 						$.each(valueC,function(index,value){
 						//	alert(value + " cat es " + $cat)
 
-							if(value==$cat)
+							if(value==$cat || $cat == -1)
 							{
 								contiene = true;
 							}
+	
 
 						});
 
@@ -133,10 +135,22 @@ function HidePosts(){
 
 			sessionStorage.removeItem('cat');
 		}
+		
+		
+		
+		
 
 	} );
 
 
+
+    $(document).bind("mobileinit", function () {
+        // jQuery Mobile's Ajax navigation does not work in all cases (e.g.,
+        // when navigating from a mobile to a non-mobile page), especially when going back, hence disabling it.
+        $.extend($.mobile, {
+            ajaxEnabled: false
+        });
+    }); 
 	// or:
 
 
