@@ -27,10 +27,11 @@
 			@extend .font-1;
 			color: $negro;
 			font-weight: bold;
+			text-decoration: underline;
 			letter-spacing: 0.5px;
 			&:hover {
 
-				text-decoration: underline;
+				text-decoration: none;
 			}
 		}
 	}

@@ -399,9 +399,10 @@ body {
     .project__main a {
       color: #000000;
       font-weight: bold;
+      text-decoration: underline;
       letter-spacing: 0.5px; }
       .project__main a:hover {
-        text-decoration: underline; }
+        text-decoration: none; }
   .project__cat {
     width: 90%;
     margin: 0 auto;
