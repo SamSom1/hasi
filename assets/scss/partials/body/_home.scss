@@ -12,9 +12,7 @@
 		margin-right: 1%;
 		padding-left: 1%;
 		&:nth-child(3n+2) {
-
 		}
-
 	}
 	&__list-content {
 		overflow:hidden;
@@ -25,7 +23,6 @@
 	&__content {
 		width: 100%;
 		margin-top: 0;
-
 		position: relative;
 		opacity: 0.7;
 		background-color: $grisOsc;
@@ -36,14 +33,10 @@
 		background-repeat:no-repeat;
 		//background-size: 22.3rem auto;
 		background-size:cover;
-
 		@extend .t;
 		&:hover {
 			opacity: 1;
-
 		}
-
-
 	}
 
 .cover{
@@ -53,14 +46,11 @@
 	height: 250px;
 	border-radius: 0.5rem;
 	background-color: rgba(255,60,0,0.5);
-
 	@extend .t;
 	&:hover {
 		background-color: rgba(48,48,48,1.0);
-
 	}
 }
-
 	&__link-table {
 		display: block;
 		position: absolute;
@@ -75,7 +65,6 @@
 			cursor: pointer;
 		}
 	}
-
 	&__title {
 		overflow: hidden;
 		width: 60%;
