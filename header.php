@@ -18,7 +18,7 @@
 
 	<!-- js scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 
 	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/app.js"></script>
@@ -37,17 +37,17 @@
 	<script type="text/javascript">
 
 
-function handler (){
+		function handler (){
 
-	$('li').off('click');
-	$('li').on('click',function(value){
+			$('li').off('click');
+			$('li').on('click',function(value){
 			// do whatever you want here
 
-			 $cat = $(this).attr('value');
-			 sessionStorage.setItem('cat',$cat);
+			$cat = $(this).attr('value');
+			sessionStorage.setItem('cat',$cat);
 
-			 HidePosts();
-			 CatSelect();
+			HidePosts();
+			CatSelect();
 			/*$.ajax({
 					url: ajaxpagination.ajaxurl,
 					type: 'post',
@@ -59,15 +59,15 @@ function handler (){
 					}
 				})*/
 
-	});
+			});
 
 //RESTORE TO DEFAULT CAT ALL
-	$('.header__text-logo a').on('click',function(value){
+$('.header__text-logo a').on('click',function(value){
 			// do whatever you want here
 
 			sessionStorage.removeItem('cat');
 
-	});
+		});
 
 
 
@@ -76,19 +76,19 @@ function handler (){
 function HidePosts(){
 
 
-					$('.home__content').each(function(){
-						var contiene = false;
-						var valueC = $(this).attr('value').split(",");
-						$.each(valueC,function(index,value){
+	$('.home__content').each(function(){
+		var contiene = false;
+		var valueC = $(this).attr('value').split(",");
+		$.each(valueC,function(index,value){
 						//	alert(value + " cat es " + $cat)
 
-							if(value==$cat || $cat == -1)
-							{
-								contiene = true;
-							}
-	
+						if(value==$cat || $cat == -1)
+						{
+							contiene = true;
+						}
 
-						});
+
+					});
 
 						//alert(valueC + "es" + contiene + "cat" + $cat);
 
@@ -100,10 +100,10 @@ function HidePosts(){
 							$(this).parent().hide();//.css('display', 'false');
 						}
 					});
-	}
+}
 
-	function CatSelect(){
-		$('.theLink').each(
+function CatSelect(){
+	$('.theLink').each(
 		function(){
 			var back = ["#FFD500","#FF3C00","#02B7A0","#3399FF","#2980B9","#E74C3C","#16A085","#E67E22","#F39C12","#C0392B"];
 			var rand = back[$cat-(Math.floor($cat/10)*10)];
@@ -118,49 +118,42 @@ function HidePosts(){
 			}
 
 			if($(this).attr('value')!= sessionStorage.getItem('cat'))
-			{$(this).css({"border-color": "", "background-color": "","color": ""});
-	}
+				{$(this).css({"border-color": "", "background-color": "","color": ""});
+		}
 
 	})
 }
 
 
-	$(document).ready(function(){
+$(document).ready(function(){
 
-		if(sessionStorage.getItem('cat')!=null)
-		{
-			$cat = sessionStorage.getItem('cat');
-			HidePosts();
-			CatSelect();
+	if(sessionStorage.getItem('cat')!=null)
+	{
+		$cat = sessionStorage.getItem('cat');
+		HidePosts();
+		CatSelect();
 
-			sessionStorage.removeItem('cat');
-		}
-		
-		
-		
-		
-
-	} );
+		sessionStorage.removeItem('cat');
+	}
 
 
 
-    $(document).bind("mobileinit", function () {
+
+
+} );
+
+
+
+$(document).bind("mobileinit", function () {
         // jQuery Mobile's Ajax navigation does not work in all cases (e.g.,
         // when navigating from a mobile to a non-mobile page), especially when going back, hence disabling it.
         $.extend($.mobile, {
-            ajaxEnabled: false
+        	ajaxEnabled: false
         });
     }); 
 	// or:
 
-
-
-
-
-
-	</script>
-
-
+</script>
 
 </head>
 <body
@@ -169,12 +162,12 @@ function HidePosts(){
 
 <!-- example scrolldown ! -->
 <?php if (!is_single()) : while ( have_posts() ) : the_post(); ?>
-		<section class="header__link-info">
-			<a href="#" onclick="$('.nav-oculto').toggleClass('nav-oculto-active');$('.btn-mobile').toggleClass('btn-mobile-active');" class="btn-mobile">
-							 info
-					</a>
-		</section>
-	<?php endwhile; endif; ?>
+	<section class="header__link-info">
+		<a href="#" onclick="$('.nav-oculto').toggleClass('nav-oculto-active');$('.btn-mobile').toggleClass('btn-mobile-active');" class="btn-mobile">
+			info
+		</a>
+	</section>
+<?php endwhile; endif; ?>
 
 <header class="header">
 	<?php global $cat; $cat='6'; ?> <!-- categoria seleccionada-->
@@ -185,11 +178,11 @@ function HidePosts(){
 		<div class="header__text-logo">
 			<span id="<?php if (is_single()) {echo 'know_more_front_title' ;} ?>">
 
-			<a href="<?php if (!is_single()) { echo bloginfo('url'); } if (is_single()) {echo '#'; } ?>" class="header__logo-link"  >
-				<img style="cursor:pointer;"  src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/10/spot.gif"/>
+				<a href="<?php if (!is_single()) { echo bloginfo('url'); } if (is_single()) {echo '#'; } ?>" class="header__logo-link"  >
+					<img style="cursor:pointer;"  src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/10/spot.gif"/>
 				</img>	Watchoutfreedom
 			</a>
-			</span>
-		</div>
-	</section>
+		</span>
+	</div>
+</section>
 </header>
