@@ -7,6 +7,6 @@ Find us on <a href="mailto:mail@watchoutfreedom.com">mail@watchoutfreedom.com</a
 
 </footer>
 
-
+</div><!-- allwrapper -->
 </body>
 </html>

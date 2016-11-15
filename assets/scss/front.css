@@ -215,6 +215,17 @@ button {
   -webkit-transition: .3s linear;
   transition: .3s linear; }
 
+.show-all, .allwrapper {
+  animation: show-all-content ease 1.5s both;
+  -webkit-animation: show-all-content ease 1.5s both;
+  -moz-animation: show-all-content ease 1.5s both;
+  -o-animation: show-all-content ease 1.5s both; }
+
+@-webkit-keyframes show-all-content {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 /* grad generated */
 .grad-gris, .aside-navigator {
   background: #ededed;
