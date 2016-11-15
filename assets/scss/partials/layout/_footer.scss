@@ -9,6 +9,7 @@
 	@extend .font-2;
 	a {
 		@extend .aSinmarco;
+		@extend .t;
 		&:hover {
 			text-decoration: underline;
 		}

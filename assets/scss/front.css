@@ -205,7 +205,7 @@ button {
   font-weight: 300px; }
 
 /* transitons */
-.t, body a, .home__box, .home__content, .home .cover, .header__logo-link, .project__logo-link, .header__list li a, .project__list li a, .header__link-info a, .project__link-info a, .nav-oculto {
+.t, body a, .home__box, .home__content, .home .cover, .header__logo-link, .project__logo-link, .header__list li a, .project__list li a, .header__link-info a, .project__link-info a, .foot a, .nav-oculto {
   -webkit-transition: 0.2s ease-in;
   -moz-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
