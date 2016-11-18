@@ -6,6 +6,7 @@
 }
 
 .nav-oculto-active {
+	@extend .t;
 	opacity: 1;
 	height: auto !important;
 }
